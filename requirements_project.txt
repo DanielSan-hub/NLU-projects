@@ -1,0 +1,8 @@
+numpy==1.26.4
+tqdm==4.66.2
+transformers==4.38.0
+tokenizers==0.15.2
+huggingface-hub==0.20.3
+safetensors==0.4.2
+requests==2.31.0
+tensorboard==2.16.2
