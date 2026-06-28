@@ -52,7 +52,7 @@ Core runs the mandatory experiments sequentially on CUDA:
 bash scripts/run_core.sh
 ```
 
-Full runs the optional extensions only after core result rows already exist:
+Extras runs the optional extensions only after core result rows already exist, without rerunning core:
 
 ```bash
 bash scripts/run_extras.sh
@@ -111,7 +111,7 @@ Logs from unattended scripts are timestamped:
 
 - `logs/<timestamp>_smoke/`
 - `logs/<timestamp>_core/`
-- `logs/<timestamp>_full/`
+- `logs/<timestamp>_extras/`
 
 Validate the submission layout and latest artifacts:
 

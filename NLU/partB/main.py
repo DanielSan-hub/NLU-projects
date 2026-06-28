@@ -38,7 +38,7 @@ PROJECT_DIR = Path(__file__).resolve().parent
 
 def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(description="Mini-Project 2B: pretrained BERT/GPT2 multitask NLU on ATIS.")
-    parser.add_argument("--mode", choices=["smoke", "core", "full"], default="smoke")
+    parser.add_argument("--mode", choices=["smoke", "core", "full", "extras"], default="smoke")
     parser.add_argument("--device", choices=["cuda", "cpu"], default="cuda")
     parser.add_argument("--seed", type=int, default=1)
     parser.add_argument("--resume", action="store_true")

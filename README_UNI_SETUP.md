@@ -137,6 +137,12 @@ python -c "import torch; print(torch.cuda.is_available(), torch.version.cuda)"
 
 If `torch.cuda.is_available()` is `False`, make sure you are on a GPU node, not a login node.
 
+If core completes and you still have time, optional extras can be launched without rerunning core:
+
+```bash
+bash scripts/run_extras.sh
+```
+
 If the CUDA wheel is incompatible with the driver, recreate the environment with the other wheel:
 
 ```bash

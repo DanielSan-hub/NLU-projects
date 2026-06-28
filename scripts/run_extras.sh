@@ -7,7 +7,7 @@ cd "$ROOT"
 mkdir -p logs results
 
 RUN_TS="$(date +%Y%m%d_%H%M%S)"
-LOG_DIR="$ROOT/logs/${RUN_TS}_full"
+LOG_DIR="$ROOT/logs/${RUN_TS}_extras"
 mkdir -p "$LOG_DIR"
 
 PYTHON_BIN="${PYTHON:-python}"
@@ -74,8 +74,8 @@ run_part() {
   local part_dir="$1"
   local log_name="${part_dir//\//_}"
   local log_file="$LOG_DIR/${log_name}.log"
-  echo "=== full ${part_dir} ==="
-  "$PYTHON_BIN" "$part_dir/main.py" --mode full "${COMMON_ARGS[@]}" 2>&1 | tee "$log_file"
+  echo "=== extras ${part_dir} ==="
+  "$PYTHON_BIN" "$part_dir/main.py" --mode extras "${COMMON_ARGS[@]}" 2>&1 | tee "$log_file"
 }
 
 run_part "LM/partA"
@@ -85,4 +85,4 @@ run_part "NLU/partB"
 
 "$PYTHON_BIN" scripts/collect_results.py 2>&1 | tee "$LOG_DIR/collect_results.log"
 
-echo "Full suite completed. Logs: ${LOG_DIR#$ROOT/}"
+echo "Extras suite completed. Logs: ${LOG_DIR#$ROOT/}"
