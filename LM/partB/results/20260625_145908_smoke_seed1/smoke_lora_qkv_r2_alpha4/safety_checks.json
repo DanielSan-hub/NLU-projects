@@ -1,0 +1,14 @@
+{
+  "all_original_gpt2_parameters_frozen": true,
+  "forward_check": {
+    "logits_shape": [
+      2,
+      64,
+      50257
+    ],
+    "loss": 5.249904632568359,
+    "padding_ignored_loss": 5.264412879943848
+  },
+  "max_abs_diff_base_vs_lora_step0": 0.0,
+  "padding_ignored": true
+}

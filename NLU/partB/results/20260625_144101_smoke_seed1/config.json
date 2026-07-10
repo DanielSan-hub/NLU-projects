@@ -1,0 +1,10 @@
+{
+  "device": "cpu",
+  "mode": "smoke",
+  "models": [
+    "bert",
+    "gpt2"
+  ],
+  "part": "NLU/partB",
+  "seed": 1
+}

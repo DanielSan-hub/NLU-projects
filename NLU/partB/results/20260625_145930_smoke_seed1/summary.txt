@@ -1,0 +1,7 @@
+Mini-Project 2B: pretrained BERT and GPT2 for ATIS multitask NLU
+Mode/device/seed: smoke / cpu / 1
+Best dev model: bert
+Best dev intent accuracy: 0.0
+Best dev slot CoNLL F1: 0.0
+Test intent accuracy: 0.0
+Test slot CoNLL F1: 0.0

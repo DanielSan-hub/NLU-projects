@@ -1,0 +1,5 @@
+C:\Users\Utente\AppData\Local\Programs\Python\Python312\Lib\site-packages\huggingface_hub\file_download.py:949: FutureWarning: `resume_download` is deprecated and will be removed in version 1.0.0. Downloads always resume when possible. If you want to force a new download, use `force_download=True`.
+  warnings.warn(
+smoke_shapes_loss_ppl_checkpoint_csv: params before tying=6485056 after tying=3268608 trainable=3268608
+smoke_shapes_loss_ppl_checkpoint_csv epoch=1 train_loss=10.8219 dev_loss=10.7731 dev_ppl=47720.51 gap=-0.0488
+Final best configuration: smoke_shapes_loss_ppl_checkpoint_csv dev_ppl=47720.512764 test_ppl=48875.96532 checkpoint=results/20260625_145853_smoke_seed1/smoke_shapes_loss_ppl_checkpoint_csv/best.pt

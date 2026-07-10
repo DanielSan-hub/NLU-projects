@@ -49,7 +49,7 @@ PROJECT_DIR = Path(__file__).resolve().parent
 
 def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(description="Mini-Project 1B: pretrained GPT-2 with manual LoRA on PTB.")
-    parser.add_argument("--mode", choices=["smoke", "core", "full", "extras"], default="smoke")
+    parser.add_argument("--mode", choices=["smoke", "core", "full"], default="smoke")
     parser.add_argument("--device", choices=["cuda", "cpu"], default="cuda")
     parser.add_argument("--seed", type=int, default=1)
     parser.add_argument("--resume", action="store_true")
@@ -370,7 +370,7 @@ def train_experiment(
         f"manual LoRA on fused c_attn Q/K/V sections; step0_max_abs_diff={max_abs_diff:.8g}; "
         f"partA_best_test_ppl={part_a_best.get('test_ppl', math.nan)}"
     )
-    if config["mode"] in {"full", "extras"}:
+    if config["mode"] == "full":
         notes += "; optional efficiency reporting: "
         if not math.isnan(part_a_best_ppl):
             improvement = part_a_best_ppl - best_dev_ppl

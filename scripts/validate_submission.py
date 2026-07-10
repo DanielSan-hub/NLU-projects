@@ -136,12 +136,11 @@ def check_part(part: str, checklist: Checklist) -> None:
             f"{part} latest run has last_lora_adapters.pt",
         )
     elif part == "NLU/partB":
-        experiment_dirs = [p for p in run_dir.iterdir() if p.is_dir()]
-        checklist.require(bool(experiment_dirs), f"{part} latest run has model experiment directories")
-        for experiment_dir in experiment_dirs:
-            label = experiment_dir.name
-            checklist.require((experiment_dir / "best.pt").is_file(), f"{part} {label} best.pt exists")
-            checklist.require((experiment_dir / "last.pt").is_file(), f"{part} {label} last.pt exists")
+        for backbone in ["bert", "gpt2"]:
+            backbone_dir = run_dir / backbone
+            checklist.require(backbone_dir.is_dir(), f"{part} latest run has {backbone}/")
+            checklist.require((backbone_dir / "best.pt").is_file(), f"{part} {backbone} best.pt exists")
+            checklist.require((backbone_dir / "last.pt").is_file(), f"{part} {backbone} last.pt exists")
     else:
         checklist.require(has_file_named(run_dir, ["best.pt"]), f"{part} latest run has best.pt")
         checklist.require(has_file_named(run_dir, ["last.pt"]), f"{part} latest run has last.pt")

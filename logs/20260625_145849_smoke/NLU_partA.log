@@ -1,0 +1,3 @@
+smoke_shapes_losses_metrics_checkpoint_csv: input_shape=(4, 17) slot_loss=4.9196 intent_loss=3.1433
+smoke_shapes_losses_metrics_checkpoint_csv epoch=1 train_loss=7.7577 dev_intent_acc=0.625 dev_slot_f1=0.040
+Final best configuration: smoke_shapes_losses_metrics_checkpoint_csv dev_intent_acc=0.625 dev_slot_f1=0.040404 test_intent_acc=0.875 test_slot_f1=0.014599 checkpoint=results/20260625_145925_smoke_seed1/smoke_shapes_losses_metrics_checkpoint_csv/best.pt

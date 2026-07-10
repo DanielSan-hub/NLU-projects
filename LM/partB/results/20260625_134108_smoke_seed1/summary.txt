@@ -1,0 +1,10 @@
+LM/partB pretrained GPT-2 + manual LoRA PTB language model
+Run directory: 20260625_134108_smoke_seed1
+Backend: tiny_fallback_smoke
+Mode/seed/device: smoke / 1 / cpu
+Best validation loss: 9.2193
+Test loss/perplexity: 9.2093 / 9989.52
+Train time seconds: 0.09
+Tokens per second: 2837.62
+Peak CUDA memory MB: 0.00
+Parameters total/trainable: 692224 / 692224

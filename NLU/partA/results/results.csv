@@ -1,0 +1,2 @@
+run_dir,part,mode,seed,device,amp_requested,amp_enabled_final,train_loss,dev_loss,dev_intent_acc,dev_slot_f1,test_loss,test_intent_acc,test_slot_acc,test_slot_f1,train_time_seconds,tokens_per_second,peak_memory_mb,total_params,trainable_params
+20260625_134114_smoke_seed1,NLU/partA,smoke,1,cpu,False,False,7.971048,7.597812,0.5,0.02439,7.619305,0.375,0.224,0.0,0.065,1192.536,0.0,117083,117083

@@ -1,0 +1,25 @@
+% Compact efficiency table generated from reports/make_efficiency_tables.py
+\begin{table*}[t]
+\centering
+\small
+\begin{tabular}{llrrrrl}
+\hline
+Part & Experiment & Time(s) & Peak MB & Tok/s & Trainable & Metric \\
+\hline
+LM/partA & baseline\_lr\_5e-4 & 132.0 & 2537 & 82886 & 6.85M & dev/test PPL 67.72/58.49 \\
+LM/partA & ablation\_d\_model\_192 & 177.9 & 2600 & 61505 & 10.37M & dev/test PPL 62.62/53.65 \\
+LM/partB & rank1\_alpha2\_qkv & 329.4 & 2171 & 10352 & 55k & dev/test PPL 36.15/32.03 \\
+LM/partB & rank8\_alpha16\_qkv & 334.6 & 2195 & 10188 & 442k & dev/test PPL 30.11/27.06 \\
+LM/partB & extra\_rank16\_alpha32\_qkv & 335.2 & 2183 & 10172 & 885k & dev/test PPL 28.64/25.81 \\
+NLU/partA & baseline\_lr\_5e-4 & 18.3 & 74 & - & 533k & dev slot 0.939, test slot 0.910, frame 0.751 \\
+NLU/partA & ablation\_n\_heads\_8 & 18.3 & 81 & - & 533k & dev slot 0.942, test slot 0.919, frame 0.772 \\
+NLU/partA & ablation\_d\_model\_192 & 18.6 & 87 & - & 897k & dev slot 0.946, test slot 0.927, frame 0.774 \\
+NLU/partB & bert & 174.1 & 2998 & - & 109.60M & dev slot 0.976, test slot 0.951, frame 0.868 \\
+NLU/partB & gpt2 & 220.0 & 3552 & - & 124.56M & dev slot 0.929, test slot 0.884, frame 0.672 \\
+NLU/partB & gpt2\_mean\_pool & 267.7 & 3570 & - & 124.56M & dev slot 0.937, test slot 0.915, frame 0.777 \\
+NLU/partB & bert\_ontology\_report & 218.5 & 3027 & - & 109.60M & dev slot 0.976, test slot 0.956, frame 0.878 \\
+\hline
+\end{tabular}
+\caption{Training time and peak CUDA tensor memory measured on the university Tesla T4 16GB VM. Peak MB is PyTorch max allocated memory, not full nvidia-smi process memory.}
+\label{tab:efficiency}
+\end{table*}

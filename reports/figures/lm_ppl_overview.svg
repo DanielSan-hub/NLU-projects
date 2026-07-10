@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1250" height="760" viewBox="0 0 1250 760" role="img" aria-label="LM results on Penn Treebank">
+<rect width="1250" height="760" fill="#ffffff"/>
+<style>
+text{font-family:Inter,Segoe UI,Arial,sans-serif;}
+.title{font-weight:700;fill:#20242a;}
+.subtitle{fill:#59616f;}
+.axis{stroke:#4b5563;stroke-width:1;}
+.grid{stroke:#d9dee7;stroke-width:1;}
+.tick{fill:#59616f;font-size:12px;}
+.label{fill:#20242a;font-size:13px;}
+.legend{fill:#20242a;font-size:13px;}
+</style>
+<text x="60.00" y="42.00" font-size="24" fill="#20242a" text-anchor="start" font-weight="700" class="title">LM results on Penn Treebank</text>
+<text x="60.00" y="68.00" font-size="14" fill="#20242a" text-anchor="start" font-weight="400" class="subtitle">Perplexity comparison. Lower is better. LoRA uses frozen pretrained GPT2 plus manual adapters.</text>
+<rect x="88.00" y="82.00" width="14.00" height="14.00" rx="2" fill="#2f6fbb" stroke="none" opacity="1.0"/>
+<text x="108.00" y="94.00" font-size="13" fill="#20242a" text-anchor="start" font-weight="400" class="legend">Dev PPL</text>
+<rect x="185.80" y="82.00" width="14.00" height="14.00" rx="2" fill="#f28e2b" stroke="none" opacity="1.0"/>
+<text x="205.80" y="94.00" font-size="13" fill="#20242a" text-anchor="start" font-weight="400" class="legend">Test PPL</text>
+<line x1="88.00" y1="592.00" x2="1208.00" y2="592.00" stroke="#d9dee7" stroke-width="1"/>
+<text x="78.00" y="596.00" font-size="12" fill="#59616f" text-anchor="end" font-weight="400">0</text>
+<line x1="88.00" y1="496.00" x2="1208.00" y2="496.00" stroke="#d9dee7" stroke-width="1"/>
+<text x="78.00" y="500.00" font-size="12" fill="#59616f" text-anchor="end" font-weight="400">15.58</text>
+<line x1="88.00" y1="400.00" x2="1208.00" y2="400.00" stroke="#d9dee7" stroke-width="1"/>
+<text x="78.00" y="404.00" font-size="12" fill="#59616f" text-anchor="end" font-weight="400">31.15</text>
+<line x1="88.00" y1="304.00" x2="1208.00" y2="304.00" stroke="#d9dee7" stroke-width="1"/>
+<text x="78.00" y="308.00" font-size="12" fill="#59616f" text-anchor="end" font-weight="400">46.73</text>
+<line x1="88.00" y1="208.00" x2="1208.00" y2="208.00" stroke="#d9dee7" stroke-width="1"/>
+<text x="78.00" y="212.00" font-size="12" fill="#59616f" text-anchor="end" font-weight="400">62.3</text>
+<line x1="88.00" y1="112.00" x2="1208.00" y2="112.00" stroke="#d9dee7" stroke-width="1"/>
+<text x="78.00" y="116.00" font-size="12" fill="#59616f" text-anchor="end" font-weight="400">77.88</text>
+<line x1="88.00" y1="112.00" x2="88.00" y2="592.00" stroke="#20242a" stroke-width="1"/>
+<line x1="88.00" y1="592.00" x2="1208.00" y2="592.00" stroke="#20242a" stroke-width="1"/>
+<text x="20.00" y="352.00" font-size="13" fill="#59616f" text-anchor="middle" font-weight="400" transform="rotate(-90 20.00 352.00)">Perplexity</text>
+<rect x="100.60" y="174.61" width="54.40" height="417.39" rx="2" fill="#2f6fbb" stroke="none" opacity="1.0"/>
+<text x="127.80" y="169.61" font-size="11" fill="#20242a" text-anchor="middle" font-weight="400">67.72</text>
+<rect x="158.00" y="231.52" width="54.40" height="360.48" rx="2" fill="#f28e2b" stroke="none" opacity="1.0"/>
+<text x="185.20" y="226.52" font-size="11" fill="#20242a" text-anchor="middle" font-weight="400">58.49</text>
+<text x="155.00" y="610.00" font-size="12" fill="#20242a" text-anchor="end" font-weight="400" transform="rotate(-35 155.00 610.00)">Scratch base</text>
+<rect x="240.60" y="200.58" width="54.40" height="391.42" rx="2" fill="#2f6fbb" stroke="none" opacity="1.0"/>
+<text x="267.80" y="195.58" font-size="11" fill="#20242a" text-anchor="middle" font-weight="400">63.51</text>
+<rect x="298.00" y="255.59" width="54.40" height="336.41" rx="2" fill="#f28e2b" stroke="none" opacity="1.0"/>
+<text x="325.20" y="250.59" font-size="11" fill="#20242a" text-anchor="middle" font-weight="400">54.58</text>
+<text x="295.00" y="610.00" font-size="12" fill="#20242a" text-anchor="end" font-weight="400" transform="rotate(-35 295.00 610.00)">Scratch lr=1e-3</text>
+<rect x="380.60" y="206.03" width="54.40" height="385.97" rx="2" fill="#2f6fbb" stroke="none" opacity="1.0"/>
+<text x="407.80" y="201.03" font-size="11" fill="#20242a" text-anchor="middle" font-weight="400">62.62</text>
+<rect x="438.00" y="261.33" width="54.40" height="330.67" rx="2" fill="#f28e2b" stroke="none" opacity="1.0"/>
+<text x="465.20" y="256.33" font-size="11" fill="#20242a" text-anchor="middle" font-weight="400">53.65</text>
+<text x="435.00" y="610.00" font-size="12" fill="#20242a" text-anchor="end" font-weight="400" transform="rotate(-35 435.00 610.00)">Scratch d=192</text>
+<rect x="520.60" y="369.17" width="54.40" height="222.83" rx="2" fill="#2f6fbb" stroke="none" opacity="1.0"/>
+<text x="547.80" y="364.17" font-size="11" fill="#20242a" text-anchor="middle" font-weight="400">36.15</text>
+<rect x="578.00" y="394.59" width="54.40" height="197.41" rx="2" fill="#f28e2b" stroke="none" opacity="1.0"/>
+<text x="605.20" y="389.59" font-size="11" fill="#20242a" text-anchor="middle" font-weight="400">32.03</text>
+<text x="575.00" y="610.00" font-size="12" fill="#20242a" text-anchor="end" font-weight="400" transform="rotate(-35 575.00 610.00)">LoRA r1</text>
+<rect x="660.60" y="384.09" width="54.40" height="207.91" rx="2" fill="#2f6fbb" stroke="none" opacity="1.0"/>
+<text x="687.80" y="379.09" font-size="11" fill="#20242a" text-anchor="middle" font-weight="400">33.73</text>
+<rect x="718.00" y="407.26" width="54.40" height="184.74" rx="2" fill="#f28e2b" stroke="none" opacity="1.0"/>
+<text x="745.20" y="402.26" font-size="11" fill="#20242a" text-anchor="middle" font-weight="400">29.97</text>
+<text x="715.00" y="610.00" font-size="12" fill="#20242a" text-anchor="end" font-weight="400" transform="rotate(-35 715.00 610.00)">LoRA r2</text>
+<rect x="800.60" y="396.50" width="54.40" height="195.50" rx="2" fill="#2f6fbb" stroke="none" opacity="1.0"/>
+<text x="827.80" y="391.50" font-size="11" fill="#20242a" text-anchor="middle" font-weight="400">31.72</text>
+<rect x="858.00" y="417.35" width="54.40" height="174.65" rx="2" fill="#f28e2b" stroke="none" opacity="1.0"/>
+<text x="885.20" y="412.35" font-size="11" fill="#20242a" text-anchor="middle" font-weight="400">28.34</text>
+<text x="855.00" y="610.00" font-size="12" fill="#20242a" text-anchor="end" font-weight="400" transform="rotate(-35 855.00 610.00)">LoRA r4</text>
+<rect x="940.60" y="406.40" width="54.40" height="185.60" rx="2" fill="#2f6fbb" stroke="none" opacity="1.0"/>
+<text x="967.80" y="401.40" font-size="11" fill="#20242a" text-anchor="middle" font-weight="400">30.11</text>
+<rect x="998.00" y="425.23" width="54.40" height="166.77" rx="2" fill="#f28e2b" stroke="none" opacity="1.0"/>
+<text x="1025.20" y="420.23" font-size="11" fill="#20242a" text-anchor="middle" font-weight="400">27.06</text>
+<text x="995.00" y="610.00" font-size="12" fill="#20242a" text-anchor="end" font-weight="400" transform="rotate(-35 995.00 610.00)">LoRA r8</text>
+<rect x="1080.60" y="415.50" width="54.40" height="176.50" rx="2" fill="#2f6fbb" stroke="none" opacity="1.0"/>
+<text x="1107.80" y="410.50" font-size="11" fill="#20242a" text-anchor="middle" font-weight="400">28.64</text>
+<rect x="1138.00" y="432.92" width="54.40" height="159.08" rx="2" fill="#f28e2b" stroke="none" opacity="1.0"/>
+<text x="1165.20" y="427.92" font-size="11" fill="#20242a" text-anchor="middle" font-weight="400">25.81</text>
+<text x="1135.00" y="610.00" font-size="12" fill="#20242a" text-anchor="end" font-weight="400" transform="rotate(-35 1135.00 610.00)">LoRA r16 extra</text>
+</svg>

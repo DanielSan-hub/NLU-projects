@@ -1,0 +1,20 @@
+{
+  "ignored_slot_labels": 35,
+  "input_shape": [
+    2,
+    32
+  ],
+  "intent_logits_shape": [
+    2,
+    26
+  ],
+  "intent_loss": 14.356678009033203,
+  "pooling": "last",
+  "slot_logits_shape": [
+    2,
+    32,
+    129
+  ],
+  "slot_loss": 11.02279281616211,
+  "valid_slot_labels": 29
+}

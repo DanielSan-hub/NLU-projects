@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1250" height="760" viewBox="0 0 1250 760" role="img" aria-label="NLU/partB optional loss curves">
+<rect width="1250" height="760" fill="#ffffff"/>
+<style>
+text{font-family:Inter,Segoe UI,Arial,sans-serif;}
+.title{font-weight:700;fill:#20242a;}
+.subtitle{fill:#59616f;}
+</style>
+<text x="60.00" y="42.00" font-size="24" fill="#20242a" text-anchor="start" font-weight="700" class="title">NLU/partB optional loss curves</text>
+<text x="60.00" y="68.00" font-size="14" fill="#59616f" text-anchor="start" font-weight="400" class="subtitle">BERT ontology report and GPT2 mean-pooling extension. Solid=train, dashed=dev.</text>
+<line x1="88.00" y1="672.00" x2="1202.00" y2="672.00" stroke="#d9dee7" stroke-width="1"/>
+<text x="78.00" y="676.00" font-size="12" fill="#59616f" text-anchor="end" font-weight="400">0.00</text>
+<line x1="88.00" y1="562.80" x2="1202.00" y2="562.80" stroke="#d9dee7" stroke-width="1"/>
+<text x="78.00" y="566.80" font-size="12" fill="#59616f" text-anchor="end" font-weight="400">0.66</text>
+<line x1="88.00" y1="453.60" x2="1202.00" y2="453.60" stroke="#d9dee7" stroke-width="1"/>
+<text x="78.00" y="457.60" font-size="12" fill="#59616f" text-anchor="end" font-weight="400">1.32</text>
+<line x1="88.00" y1="344.40" x2="1202.00" y2="344.40" stroke="#d9dee7" stroke-width="1"/>
+<text x="78.00" y="348.40" font-size="12" fill="#59616f" text-anchor="end" font-weight="400">1.98</text>
+<line x1="88.00" y1="235.20" x2="1202.00" y2="235.20" stroke="#d9dee7" stroke-width="1"/>
+<text x="78.00" y="239.20" font-size="12" fill="#59616f" text-anchor="end" font-weight="400">2.63</text>
+<line x1="88.00" y1="126.00" x2="1202.00" y2="126.00" stroke="#d9dee7" stroke-width="1"/>
+<text x="78.00" y="130.00" font-size="12" fill="#59616f" text-anchor="end" font-weight="400">3.29</text>
+<line x1="88.00" y1="126.00" x2="88.00" y2="672.00" stroke="#d9dee7" stroke-width="1"/>
+<text x="88.00" y="698.00" font-size="12" fill="#59616f" text-anchor="middle" font-weight="400">1</text>
+<line x1="366.50" y1="126.00" x2="366.50" y2="672.00" stroke="#d9dee7" stroke-width="1"/>
+<text x="366.50" y="698.00" font-size="12" fill="#59616f" text-anchor="middle" font-weight="400">2</text>
+<line x1="645.00" y1="126.00" x2="645.00" y2="672.00" stroke="#d9dee7" stroke-width="1"/>
+<text x="645.00" y="698.00" font-size="12" fill="#59616f" text-anchor="middle" font-weight="400">3</text>
+<line x1="923.50" y1="126.00" x2="923.50" y2="672.00" stroke="#d9dee7" stroke-width="1"/>
+<text x="923.50" y="698.00" font-size="12" fill="#59616f" text-anchor="middle" font-weight="400">4</text>
+<line x1="1202.00" y1="126.00" x2="1202.00" y2="672.00" stroke="#d9dee7" stroke-width="1"/>
+<text x="1202.00" y="698.00" font-size="12" fill="#59616f" text-anchor="middle" font-weight="400">5</text>
+<line x1="88.00" y1="126.00" x2="88.00" y2="672.00" stroke="#20242a" stroke-width="1"/>
+<line x1="88.00" y1="672.00" x2="1202.00" y2="672.00" stroke="#20242a" stroke-width="1"/>
+<text x="645.00" y="732.00" font-size="13" fill="#59616f" text-anchor="middle" font-weight="400">Epoch</text>
+<text x="24.00" y="399.00" font-size="13" fill="#59616f" text-anchor="middle" font-weight="400" transform="rotate(-90 24.00 399.00)">Loss</text>
+<line x1="88.00" y1="91.00" x2="112.00" y2="91.00" stroke="#2f6fbb" stroke-width="3"/>
+<text x="120.00" y="95.00" font-size="12" fill="#20242a" text-anchor="start" font-weight="400">BERT ontology train</text>
+<line x1="262.80" y1="91.00" x2="286.80" y2="91.00" stroke="#2f6fbb" stroke-width="3" stroke-dasharray="7 5"/>
+<text x="294.80" y="95.00" font-size="12" fill="#20242a" text-anchor="start" font-weight="400">BERT ontology dev</text>
+<line x1="423.20" y1="91.00" x2="447.20" y2="91.00" stroke="#f28e2b" stroke-width="3"/>
+<text x="455.20" y="95.00" font-size="12" fill="#20242a" text-anchor="start" font-weight="400">GPT2 mean train</text>
+<line x1="569.20" y1="91.00" x2="593.20" y2="91.00" stroke="#f28e2b" stroke-width="3" stroke-dasharray="7 5"/>
+<text x="601.20" y="95.00" font-size="12" fill="#20242a" text-anchor="start" font-weight="400">GPT2 mean dev</text>
+<polyline points="88.00,464.49 366.50,638.75 645.00,655.93 923.50,661.32 1202.00,665.29" fill="none" stroke="#2f6fbb" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round"/>
+<circle cx="88.00" cy="464.49" r="4.00" fill="#2f6fbb" stroke="white" stroke-width="1.2"/>
+<circle cx="366.50" cy="638.75" r="4.00" fill="#2f6fbb" stroke="white" stroke-width="1.2"/>
+<circle cx="645.00" cy="655.93" r="4.00" fill="#2f6fbb" stroke="white" stroke-width="1.2"/>
+<circle cx="923.50" cy="661.32" r="4.00" fill="#2f6fbb" stroke="white" stroke-width="1.2"/>
+<circle cx="1202.00" cy="665.29" r="4.00" fill="#2f6fbb" stroke="white" stroke-width="1.2"/>
+<polyline points="88.00,607.56 366.50,630.92 645.00,635.54 923.50,636.18 1202.00,641.29" fill="none" stroke="#2f6fbb" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round" stroke-dasharray="7 5"/>
+<circle cx="88.00" cy="607.56" r="4.00" fill="#2f6fbb" stroke="white" stroke-width="1.2"/>
+<circle cx="366.50" cy="630.92" r="4.00" fill="#2f6fbb" stroke="white" stroke-width="1.2"/>
+<circle cx="645.00" cy="635.54" r="4.00" fill="#2f6fbb" stroke="white" stroke-width="1.2"/>
+<circle cx="923.50" cy="636.18" r="4.00" fill="#2f6fbb" stroke="white" stroke-width="1.2"/>
+<circle cx="1202.00" cy="641.29" r="4.00" fill="#2f6fbb" stroke="white" stroke-width="1.2"/>
+<polyline points="88.00,165.95 366.50,587.86 645.00,624.29 923.50,640.96 1202.00,651.41" fill="none" stroke="#f28e2b" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round"/>
+<circle cx="88.00" cy="165.95" r="4.00" fill="#f28e2b" stroke="white" stroke-width="1.2"/>
+<circle cx="366.50" cy="587.86" r="4.00" fill="#f28e2b" stroke="white" stroke-width="1.2"/>
+<circle cx="645.00" cy="624.29" r="4.00" fill="#f28e2b" stroke="white" stroke-width="1.2"/>
+<circle cx="923.50" cy="640.96" r="4.00" fill="#f28e2b" stroke="white" stroke-width="1.2"/>
+<circle cx="1202.00" cy="651.41" r="4.00" fill="#f28e2b" stroke="white" stroke-width="1.2"/>
+<polyline points="88.00,565.84 366.50,611.08 645.00,626.77 923.50,630.92 1202.00,633.75" fill="none" stroke="#f28e2b" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round" stroke-dasharray="7 5"/>
+<circle cx="88.00" cy="565.84" r="4.00" fill="#f28e2b" stroke="white" stroke-width="1.2"/>
+<circle cx="366.50" cy="611.08" r="4.00" fill="#f28e2b" stroke="white" stroke-width="1.2"/>
+<circle cx="645.00" cy="626.77" r="4.00" fill="#f28e2b" stroke="white" stroke-width="1.2"/>
+<circle cx="923.50" cy="630.92" r="4.00" fill="#f28e2b" stroke="white" stroke-width="1.2"/>
+<circle cx="1202.00" cy="633.75" r="4.00" fill="#f28e2b" stroke="white" stroke-width="1.2"/>
+</svg>

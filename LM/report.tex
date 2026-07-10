@@ -1,0 +1,74 @@
+\documentclass[a4paper]{article}
+
+\usepackage{INTERSPEECH2021}
+
+\title{Language Modeling Project}
+\name{TODO Name Surname (mat. TODO)}
+\address{University of Trento}
+\email{TODO@studenti.unitn.it}
+
+\begin{document}
+
+\maketitle
+
+\section{Introduction}
+This report summarizes the Lab 04 language modeling project on Penn Treebank \cite{marcus1993ptb}. I implemented a GPT-2-style decoder from scratch for Part A and a parameter-efficient adaptation of pretrained GPT-2 for Part B. The main metric is perplexity (PPL), computed from cross-entropy with padding labels ignored. Both systems satisfy the target PPL below 250. The best scratch model reached 62.62 dev PPL and 53.65 test PPL, while the best LoRA run reached 28.64 dev PPL and 25.81 test PPL, clearly improving over the scratch baseline.
+
+\section{Implementation details}
+Part A follows the Lab 04 Transformer decoder design \cite{vaswani2017attention}: token and learned positional embeddings, causal masked multi-head self-attention, feed-forward layers, residual blocks, final LayerNorm, and an LM head. Dropout is applied after the embedding sum, attention softmax, attention output projection, and final feed-forward linear layer. The output projection is tied to the token embedding matrix, i.e. \texttt{lm\_head.weight is token\_embed.weight}, reducing parameters and acting as regularization.
+
+Part B loads \texttt{openai-community/gpt2} \cite{radford2019language}, freezes all original parameters, and trains only manually implemented LoRA adapters \cite{hu2022lora}. Since HuggingFace GPT-2 uses a fused \texttt{c\_attn} Conv1D projection, I wrap that module and add separate low-rank deltas to the Q, K, and V slices. LoRA matrix A is randomly initialized and B is exactly zero, so the step-zero LoRA logits match the frozen base model. All runs use AdamW, gradient clipping, fixed seed, resume-safe checkpoints, CSV logs, optional AMP, and peak CUDA memory tracking.
+
+\section{Results}
+Table \ref{tab:lm-core} reports the mandatory experiments. Increasing \texttt{d\_model} was the best scratch one-at-a-time ablation. Depth and head-count changes were useful but weaker; lower learning rate slowed optimization. Table \ref{tab:lm-lora} shows that increasing LoRA rank consistently improved perplexity. The extra rank-16 run was best overall. Q-only and K-only adapters were much worse than QKV, while V-only was useful but still below QKV, supporting the decision to adapt the whole fused attention projection.
+
+\begin{table}[t]
+\centering
+\small
+\caption{Part A scratch GPT-2 on Penn Treebank.}
+\label{tab:lm-core}
+\begin{tabular}{lrrrr}
+\hline
+Experiment & Dev PPL & Test PPL & Params & Mem MB \\
+\hline
+baseline lr=5e-4 & 67.72 & 58.49 & 6.85M & 2537 \\
+lr=1e-3 & 63.51 & 54.58 & 6.85M & 2537 \\
+lr=3e-4 & 77.93 & 67.26 & 6.85M & 2537 \\
+d\_model=192 & \textbf{62.62} & \textbf{53.65} & 10.37M & 2600 \\
+n\_heads=8 & 68.16 & 58.52 & 6.85M & 2565 \\
+layers=3 & 66.79 & 57.49 & 7.04M & 2573 \\
+ff=768 & 67.83 & 58.18 & 6.98M & 2548 \\
+dropout=0 & 67.55 & 58.39 & 6.85M & 2530 \\
+dropout=0.2+tie & 74.17 & 63.70 & 6.85M & 2537 \\
+\hline
+\end{tabular}
+\end{table}
+
+\begin{table}[t]
+\centering
+\small
+\caption{Part B pretrained GPT-2 with manual LoRA.}
+\label{tab:lm-lora}
+\begin{tabular}{lrrrr}
+\hline
+Experiment & Trainable & Dev PPL & Test PPL & Mem MB \\
+\hline
+r=1, a=2 QKV & 55K & 36.15 & 32.03 & 2171 \\
+r=2, a=4 QKV & 111K & 33.73 & 29.97 & 2190 \\
+r=4, a=8 QKV & 221K & 31.72 & 28.34 & 2192 \\
+r=8, a=16 QKV & 442K & 30.11 & 27.06 & 2195 \\
+r=16, a=32 QKV & 885K & \textbf{28.64} & \textbf{25.81} & 2183 \\
+Q only, r=4 & 74K & 49.12 & 43.25 & 2151 \\
+K only, r=4 & 74K & 49.38 & 43.61 & 2151 \\
+V only, r=4 & 74K & 35.39 & 31.41 & 2151 \\
+\hline
+\end{tabular}
+\end{table}
+
+\section*{AI tool usage}
+I used AI coding assistance to scaffold the training harness, review implementation details, debug the university-machine run, and draft this report. I inspected and executed the code and remain responsible for the submitted implementation and results.
+
+\bibliographystyle{IEEEtran}
+\bibliography{report_refs}
+
+\end{document}

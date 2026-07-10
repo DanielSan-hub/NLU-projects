@@ -1,0 +1,11 @@
+LM/partB experiment: smoke_lora_qkv_r2_alpha4
+Model: openai-community/gpt2
+Rank/alpha/targets: 2 / 4 / qkv
+Frozen pretrained parameters: yes
+Trainable params: 110592 (0.088793%)
+Base vs LoRA step-0 max abs diff: 0
+Best epoch: 1
+Best dev loss/PPL: 5.3345 / 207.37
+Test PPL from best adapters: 365.31
+PartA best dev PPL: 47720.512764
+Improves over PartA: True

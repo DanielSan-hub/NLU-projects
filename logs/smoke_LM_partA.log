@@ -1,0 +1,4 @@
+C:\Users\Utente\nlu_labs\NLU-2026-Labs\LM\partA\model.py:28: UserWarning: enable_nested_tensor is True, but self.use_nested_tensor is False because encoder_layer.norm_first was True
+  self.blocks = nn.TransformerEncoder(layer, num_layers=n_layer)
+epoch=1 train_loss=9.2388 valid_loss=9.2193 valid_ppl=10090.17
+Done. Results appended to C:\Users\Utente\nlu_labs\NLU-2026-Labs\LM\partA\results\results.csv

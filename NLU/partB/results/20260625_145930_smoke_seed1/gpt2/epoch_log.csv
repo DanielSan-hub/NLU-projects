@@ -1,0 +1,2 @@
+epoch,train_loss,slot_loss,intent_loss,dev_loss,intent_acc_dev,slot_f1_dev,is_best
+1,29.112932,11.169666,17.943266,25.527079,0.0,0.0,True

@@ -1,0 +1,70 @@
+\documentclass[a4paper]{article}
+
+\usepackage{INTERSPEECH2021}
+
+\title{ATIS Multitask NLU Project}
+\name{TODO Name Surname (mat. TODO)}
+\address{University of Trento}
+\email{TODO@studenti.unitn.it}
+
+\begin{document}
+
+\maketitle
+
+\section{Introduction}
+This report summarizes the Lab 05 NLU project on ATIS \cite{hemphill1990atis}. The task is semantic frame extraction: intent classification plus token-level slot filling. I implemented a scratch GPT-2-style causal model for Part A and compared pretrained BERT \cite{devlin2019bert} with pretrained GPT-2 \cite{radford2019language} for Part B. Evaluation uses intent accuracy, CoNLL-style slot F1, and semantic frame accuracy. The best scratch model reached 0.968 dev intent accuracy and 0.942 dev slot F1. The best pretrained system was BERT, with 0.980 dev intent accuracy and 0.976 dev slot F1 in the ontology-report extra run.
+
+\section{Implementation details}
+Part A adapts the scratch decoder used for language modeling to multitask NLU. The input vocabulary is built from ATIS words, slots, and intents; a stratified train/dev split is created from the training set. Because GPT-2 is causal, the global CLS token is appended at the end of the sequence, not prepended: the last token can attend to the whole utterance. Slot labels ignore padding and CLS, while the intent head reads the final CLS representation. The training objective is the sum of slot cross-entropy and intent cross-entropy.
+
+Part B uses HuggingFace tokenizers and pretrained encoders. Since ATIS labels are word-level but BERT/GPT-2 operate on subtokens, I implemented explicit subtoken alignment: the gold slot label is assigned only to the first subtoken of each word, while non-first subtokens, special tokens, and padding receive label -100 and are ignored by the slot loss and F1 computation. BERT uses the [CLS] representation for intent classification; GPT-2 uses the last valid token in the mandatory model, with mean pooling as an optional diagnostic extra. All runs save checkpoints, configs, CSV rows, summaries, and support resume.
+
+\section{Results}
+Table \ref{tab:nlu-scratch} shows that the scratch GPT-2 architecture is already strong on ATIS. Increasing the number of attention heads gave the best combined dev score, while larger \texttt{d\_model} produced the best dev slot F1 but slightly lower intent accuracy. Table \ref{tab:nlu-pretrained} shows that BERT is strongest overall, as expected for bidirectional token classification. GPT-2 remains competitive but is worse for slots under causal pooling. Mean pooling improves GPT-2 over last-token pooling, suggesting that the final state alone is not always the best sentence-level summary for this NLU setting.
+
+\begin{table}[t]
+\centering
+\small
+\caption{Part A scratch GPT-2 on ATIS.}
+\label{tab:nlu-scratch}
+\begin{tabular}{lrrrr}
+\hline
+Experiment & Dev Int. & Dev F1 & Test Int. & Test F1 \\
+\hline
+baseline & 0.966 & 0.939 & 0.953 & 0.910 \\
+lr=1e-3 & 0.966 & 0.939 & 0.948 & 0.919 \\
+lr=3e-4 & 0.964 & 0.940 & 0.960 & 0.920 \\
+d\_model=192 & 0.962 & \textbf{0.946} & 0.953 & \textbf{0.927} \\
+n\_heads=8 & \textbf{0.968} & 0.942 & \textbf{0.960} & 0.919 \\
+layers=3 & 0.958 & 0.944 & 0.951 & 0.916 \\
+ff=768 & 0.964 & 0.943 & 0.957 & 0.919 \\
+dropout=0.2 & 0.964 & 0.935 & 0.959 & 0.908 \\
+semantic extra & 0.960 & 0.947 & 0.951 & 0.917 \\
+\hline
+\end{tabular}
+\end{table}
+
+\begin{table}[t]
+\centering
+\small
+\caption{Part B pretrained models on ATIS.}
+\label{tab:nlu-pretrained}
+\begin{tabular}{lrrrrr}
+\hline
+Model & Dev Int. & Dev F1 & Test Int. & Test F1 & Frame \\
+\hline
+BERT core & 0.976 & 0.976 & 0.976 & 0.951 & 0.868 \\
+GPT-2 last & 0.964 & 0.929 & 0.957 & 0.884 & 0.672 \\
+GPT-2 mean & 0.972 & 0.937 & 0.968 & 0.915 & 0.777 \\
+BERT ontology & \textbf{0.980} & \textbf{0.976} & \textbf{0.978} & \textbf{0.956} & \textbf{0.878} \\
+\hline
+\end{tabular}
+\end{table}
+
+\section*{AI tool usage}
+I used AI coding assistance to implement the reproducible harness, check subtoken alignment, debug training on the university GPU machine, and draft this report. I verified the runs, logs, and metrics and remain responsible for the submitted code and discussion.
+
+\bibliographystyle{IEEEtran}
+\bibliography{report_refs}
+
+\end{document}

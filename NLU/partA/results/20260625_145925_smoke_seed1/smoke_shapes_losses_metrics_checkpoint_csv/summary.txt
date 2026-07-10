@@ -1,0 +1,10 @@
+NLU/partA experiment: smoke_shapes_losses_metrics_checkpoint_csv
+Architecture: d_model=64 n_heads=2 num_layers=1 ff_dim=256 dropout=0.1
+Best epoch: 1
+Best dev intent accuracy: 0.6250
+Best dev slot CoNLL F1: 0.0404
+Test intent accuracy: 0.8750
+Test slot CoNLL F1: 0.0146
+Test semantic frame accuracy: 0.0000
+Decision: accept
+Notes: best dev intent/slot combined score so far

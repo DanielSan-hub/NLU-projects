@@ -1,0 +1,10 @@
+{
+  "device": "cpu",
+  "experiments": [
+    "smoke_lora_qkv_r2_alpha4"
+  ],
+  "mode": "smoke",
+  "part": "LM/partB",
+  "pretrained_model": "openai-community/gpt2",
+  "seed": 1
+}

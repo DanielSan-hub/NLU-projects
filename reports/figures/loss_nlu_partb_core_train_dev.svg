@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1250" height="760" viewBox="0 0 1250 760" role="img" aria-label="NLU/partB loss curves: BERT vs GPT2 core">
+<rect width="1250" height="760" fill="#ffffff"/>
+<style>
+text{font-family:Inter,Segoe UI,Arial,sans-serif;}
+.title{font-weight:700;fill:#20242a;}
+.subtitle{fill:#59616f;}
+</style>
+<text x="60.00" y="42.00" font-size="24" fill="#20242a" text-anchor="start" font-weight="700" class="title">NLU/partB loss curves: BERT vs GPT2 core</text>
+<text x="60.00" y="68.00" font-size="14" fill="#59616f" text-anchor="start" font-weight="400" class="subtitle">Total multitask loss. Solid=train, dashed=dev. BERT converges to a much lower dev loss.</text>
+<line x1="88.00" y1="672.00" x2="1202.00" y2="672.00" stroke="#d9dee7" stroke-width="1"/>
+<text x="78.00" y="676.00" font-size="12" fill="#59616f" text-anchor="end" font-weight="400">0.00</text>
+<line x1="88.00" y1="562.80" x2="1202.00" y2="562.80" stroke="#d9dee7" stroke-width="1"/>
+<text x="78.00" y="566.80" font-size="12" fill="#59616f" text-anchor="end" font-weight="400">0.72</text>
+<line x1="88.00" y1="453.60" x2="1202.00" y2="453.60" stroke="#d9dee7" stroke-width="1"/>
+<text x="78.00" y="457.60" font-size="12" fill="#59616f" text-anchor="end" font-weight="400">1.44</text>
+<line x1="88.00" y1="344.40" x2="1202.00" y2="344.40" stroke="#d9dee7" stroke-width="1"/>
+<text x="78.00" y="348.40" font-size="12" fill="#59616f" text-anchor="end" font-weight="400">2.16</text>
+<line x1="88.00" y1="235.20" x2="1202.00" y2="235.20" stroke="#d9dee7" stroke-width="1"/>
+<text x="78.00" y="239.20" font-size="12" fill="#59616f" text-anchor="end" font-weight="400">2.87</text>
+<line x1="88.00" y1="126.00" x2="1202.00" y2="126.00" stroke="#d9dee7" stroke-width="1"/>
+<text x="78.00" y="130.00" font-size="12" fill="#59616f" text-anchor="end" font-weight="400">3.59</text>
+<line x1="88.00" y1="126.00" x2="88.00" y2="672.00" stroke="#d9dee7" stroke-width="1"/>
+<text x="88.00" y="698.00" font-size="12" fill="#59616f" text-anchor="middle" font-weight="400">1</text>
+<line x1="459.33" y1="126.00" x2="459.33" y2="672.00" stroke="#d9dee7" stroke-width="1"/>
+<text x="459.33" y="698.00" font-size="12" fill="#59616f" text-anchor="middle" font-weight="400">2</text>
+<line x1="830.67" y1="126.00" x2="830.67" y2="672.00" stroke="#d9dee7" stroke-width="1"/>
+<text x="830.67" y="698.00" font-size="12" fill="#59616f" text-anchor="middle" font-weight="400">3</text>
+<line x1="1202.00" y1="126.00" x2="1202.00" y2="672.00" stroke="#d9dee7" stroke-width="1"/>
+<text x="1202.00" y="698.00" font-size="12" fill="#59616f" text-anchor="middle" font-weight="400">4</text>
+<line x1="88.00" y1="126.00" x2="88.00" y2="672.00" stroke="#20242a" stroke-width="1"/>
+<line x1="88.00" y1="672.00" x2="1202.00" y2="672.00" stroke="#20242a" stroke-width="1"/>
+<text x="645.00" y="732.00" font-size="13" fill="#59616f" text-anchor="middle" font-weight="400">Epoch</text>
+<text x="24.00" y="399.00" font-size="13" fill="#59616f" text-anchor="middle" font-weight="400" transform="rotate(-90 24.00 399.00)">Loss</text>
+<line x1="88.00" y1="91.00" x2="112.00" y2="91.00" stroke="#2f6fbb" stroke-width="3"/>
+<text x="120.00" y="95.00" font-size="12" fill="#20242a" text-anchor="start" font-weight="400">BERT core train</text>
+<line x1="234.00" y1="91.00" x2="258.00" y2="91.00" stroke="#2f6fbb" stroke-width="3" stroke-dasharray="7 5"/>
+<text x="266.00" y="95.00" font-size="12" fill="#20242a" text-anchor="start" font-weight="400">BERT core dev</text>
+<line x1="365.60" y1="91.00" x2="389.60" y2="91.00" stroke="#f28e2b" stroke-width="3"/>
+<text x="397.60" y="95.00" font-size="12" fill="#20242a" text-anchor="start" font-weight="400">GPT2 core train</text>
+<line x1="511.60" y1="91.00" x2="535.60" y2="91.00" stroke="#f28e2b" stroke-width="3" stroke-dasharray="7 5"/>
+<text x="543.60" y="95.00" font-size="12" fill="#20242a" text-anchor="start" font-weight="400">GPT2 core dev</text>
+<polyline points="88.00,480.68 459.33,641.96 830.67,657.67 1202.00,662.41" fill="none" stroke="#2f6fbb" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round"/>
+<circle cx="88.00" cy="480.68" r="4.00" fill="#2f6fbb" stroke="white" stroke-width="1.2"/>
+<circle cx="459.33" cy="641.96" r="4.00" fill="#2f6fbb" stroke="white" stroke-width="1.2"/>
+<circle cx="830.67" cy="657.67" r="4.00" fill="#2f6fbb" stroke="white" stroke-width="1.2"/>
+<circle cx="1202.00" cy="662.41" r="4.00" fill="#2f6fbb" stroke="white" stroke-width="1.2"/>
+<polyline points="88.00,612.09 459.33,636.57 830.67,636.52 1202.00,640.76" fill="none" stroke="#2f6fbb" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round" stroke-dasharray="7 5"/>
+<circle cx="88.00" cy="612.09" r="4.00" fill="#2f6fbb" stroke="white" stroke-width="1.2"/>
+<circle cx="459.33" cy="636.57" r="4.00" fill="#2f6fbb" stroke="white" stroke-width="1.2"/>
+<circle cx="830.67" cy="636.52" r="4.00" fill="#2f6fbb" stroke="white" stroke-width="1.2"/>
+<circle cx="1202.00" cy="640.76" r="4.00" fill="#2f6fbb" stroke="white" stroke-width="1.2"/>
+<polyline points="88.00,165.73 459.33,578.38 830.67,620.84 1202.00,641.35" fill="none" stroke="#f28e2b" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round"/>
+<circle cx="88.00" cy="165.73" r="4.00" fill="#f28e2b" stroke="white" stroke-width="1.2"/>
+<circle cx="459.33" cy="578.38" r="4.00" fill="#f28e2b" stroke="white" stroke-width="1.2"/>
+<circle cx="830.67" cy="620.84" r="4.00" fill="#f28e2b" stroke="white" stroke-width="1.2"/>
+<circle cx="1202.00" cy="641.35" r="4.00" fill="#f28e2b" stroke="white" stroke-width="1.2"/>
+<polyline points="88.00,558.40 459.33,605.77 830.67,618.78 1202.00,626.93" fill="none" stroke="#f28e2b" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round" stroke-dasharray="7 5"/>
+<circle cx="88.00" cy="558.40" r="4.00" fill="#f28e2b" stroke="white" stroke-width="1.2"/>
+<circle cx="459.33" cy="605.77" r="4.00" fill="#f28e2b" stroke="white" stroke-width="1.2"/>
+<circle cx="830.67" cy="618.78" r="4.00" fill="#f28e2b" stroke="white" stroke-width="1.2"/>
+<circle cx="1202.00" cy="626.93" r="4.00" fill="#f28e2b" stroke="white" stroke-width="1.2"/>
+</svg>

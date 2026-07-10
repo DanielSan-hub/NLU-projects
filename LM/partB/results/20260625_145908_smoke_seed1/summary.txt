@@ -1,0 +1,7 @@
+Mini-Project 1B: pretrained GPT-2 + manual LoRA
+Mode/device/seed: smoke / cpu / 1
+Final best configuration: smoke_lora_qkv_r2_alpha4
+Best dev PPL: 207.371476
+Best test PPL: 365.313062
+Improves over PartA: True
+Checkpoint: results/20260625_145908_smoke_seed1/smoke_lora_qkv_r2_alpha4/best_lora_adapters.pt

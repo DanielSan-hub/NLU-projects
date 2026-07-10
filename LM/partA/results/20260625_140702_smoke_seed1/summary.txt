@@ -1,0 +1,7 @@
+Mini-Project 1A: scratch GPT2 PTB language modeling
+Mode/device/seed: smoke / cpu / 1
+Final best configuration: smoke_shapes_loss_ppl_checkpoint_csv
+Best dev PPL: 47720.512764
+Best test PPL: 48875.96532
+Checkpoint: results/20260625_140702_smoke_seed1/smoke_shapes_loss_ppl_checkpoint_csv/best.pt
+See results/results_partA.csv and per-experiment epoch_log.csv for overfitting-aware traces.

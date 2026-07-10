@@ -1,16 +1,26 @@
-# NLU Part B — experiment design
+# NLU PartB Report Notes
 
-## Question
+Pretrained BERT and GPT2 for ATIS multitask NLU.
 
-How do pretrained encoder and decoder representations compare for joint ATIS intent classification and slot filling under consistent metrics?
+Best core model: BERT.
 
-## Evidence to report
+Best overall including optional extras: `bert_ontology_report`.
 
-- intent accuracy and slot F1 for BERT and GPT-2;
-- tokenizer and first-subtoken alignment checks;
-- label masking and pooling choices;
-- matched run metadata plus qualitative errors for each architecture.
+| Model | Dev Intent | Dev Slot F1 | Test Intent | Test Slot F1 | Frame Acc |
+| --- | ---: | ---: | ---: | ---: | ---: |
+| BERT core | 0.976 | 0.976 | 0.976 | 0.951 | 0.868 |
+| GPT2 last | 0.964 | 0.929 | 0.957 | 0.884 | 0.672 |
+| GPT2 mean | 0.972 | 0.937 | 0.968 | 0.915 | 0.777 |
+| BERT ontology | 0.980 | 0.976 | 0.978 | 0.956 | 0.878 |
 
-## Status
+Implementation details to mention:
 
-Both pretrained-model paths and the run harness are present. No quantitative result is claimed in this public snapshot; populate the final report from `NLU/partB/results/results_partB.csv` after the GPU core run.
+- BERT: `bert-base-uncased`, CLS pooling.
+- GPT2: `openai-community/gpt2`, last valid token pooling in core.
+- Subtoken alignment: gold slot label only on first subtoken.
+- Non-first subtokens, special tokens, and padding set to `-100`.
+- Slot loss uses `ignore_index=-100`; evaluation reconstructs only valid word-level labels.
+
+Interpretation:
+
+BERT is strongest because slot filling benefits from bidirectional context. GPT2 is competitive for intent but weaker for slots. Mean pooling improves GPT2 over last-token pooling.

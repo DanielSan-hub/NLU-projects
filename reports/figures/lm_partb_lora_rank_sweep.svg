@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="680" viewBox="0 0 1100 680" role="img" aria-label="Manual LoRA rank sweep on GPT2 c_attn QKV">
+<rect width="1100" height="680" fill="#ffffff"/>
+<style>
+text{font-family:Inter,Segoe UI,Arial,sans-serif;}
+.title{font-weight:700;fill:#20242a;}
+.subtitle{fill:#59616f;}
+.axis{stroke:#4b5563;stroke-width:1;}
+.grid{stroke:#d9dee7;stroke-width:1;}
+.tick{fill:#59616f;font-size:12px;}
+.label{fill:#20242a;font-size:13px;}
+.legend{fill:#20242a;font-size:13px;}
+</style>
+<text x="60.00" y="42.00" font-size="24" fill="#20242a" text-anchor="start" font-weight="700" class="title">Manual LoRA rank sweep on GPT2 c_attn QKV</text>
+<text x="60.00" y="68.00" font-size="14" fill="#20242a" text-anchor="start" font-weight="400" class="subtitle">Increasing rank increases trainable parameters and consistently improves PPL.</text>
+<rect x="86.00" y="82.00" width="14.00" height="14.00" rx="2" fill="#2f6fbb" stroke="none" opacity="1.0"/>
+<text x="106.00" y="94.00" font-size="13" fill="#20242a" text-anchor="start" font-weight="400" class="legend">Dev PPL</text>
+<rect x="183.80" y="82.00" width="14.00" height="14.00" rx="2" fill="#f28e2b" stroke="none" opacity="1.0"/>
+<text x="203.80" y="94.00" font-size="13" fill="#20242a" text-anchor="start" font-weight="400" class="legend">Test PPL</text>
+<line x1="86.00" y1="574.00" x2="1058.00" y2="574.00" stroke="#d9dee7" stroke-width="1"/>
+<text x="76.00" y="578.00" font-size="12" fill="#59616f" text-anchor="end" font-weight="400">0</text>
+<line x1="86.00" y1="481.60" x2="1058.00" y2="481.60" stroke="#d9dee7" stroke-width="1"/>
+<text x="76.00" y="485.60" font-size="12" fill="#59616f" text-anchor="end" font-weight="400">8</text>
+<line x1="86.00" y1="389.20" x2="1058.00" y2="389.20" stroke="#d9dee7" stroke-width="1"/>
+<text x="76.00" y="393.20" font-size="12" fill="#59616f" text-anchor="end" font-weight="400">16</text>
+<line x1="86.00" y1="296.80" x2="1058.00" y2="296.80" stroke="#d9dee7" stroke-width="1"/>
+<text x="76.00" y="300.80" font-size="12" fill="#59616f" text-anchor="end" font-weight="400">24</text>
+<line x1="86.00" y1="204.40" x2="1058.00" y2="204.40" stroke="#d9dee7" stroke-width="1"/>
+<text x="76.00" y="208.40" font-size="12" fill="#59616f" text-anchor="end" font-weight="400">32</text>
+<line x1="86.00" y1="112.00" x2="1058.00" y2="112.00" stroke="#d9dee7" stroke-width="1"/>
+<text x="76.00" y="116.00" font-size="12" fill="#59616f" text-anchor="end" font-weight="400">40</text>
+<line x1="86.00" y1="112.00" x2="86.00" y2="574.00" stroke="#20242a" stroke-width="1"/>
+<line x1="86.00" y1="574.00" x2="1058.00" y2="574.00" stroke="#20242a" stroke-width="1"/>
+<text x="20.00" y="343.00" font-size="13" fill="#59616f" text-anchor="middle" font-weight="400" transform="rotate(-90 20.00 343.00)">Perplexity</text>
+<text x="86.00" y="602.00" font-size="12" fill="#20242a" text-anchor="middle" font-weight="400">r1</text>
+<text x="329.00" y="602.00" font-size="12" fill="#20242a" text-anchor="middle" font-weight="400">r2</text>
+<text x="572.00" y="602.00" font-size="12" fill="#20242a" text-anchor="middle" font-weight="400">r4</text>
+<text x="815.00" y="602.00" font-size="12" fill="#20242a" text-anchor="middle" font-weight="400">r8</text>
+<text x="1058.00" y="602.00" font-size="12" fill="#20242a" text-anchor="middle" font-weight="400">r16 extra</text>
+<polyline points="86.00,156.41 329.00,184.38 572.00,207.63 815.00,226.18 1058.00,243.25" fill="none" stroke="#2f6fbb" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
+<circle cx="86.00" cy="156.41" r="5.00" fill="#2f6fbb" stroke="white" stroke-width="1.5" opacity="1.0"/>
+<circle cx="329.00" cy="184.38" r="5.00" fill="#2f6fbb" stroke="white" stroke-width="1.5" opacity="1.0"/>
+<circle cx="572.00" cy="207.63" r="5.00" fill="#2f6fbb" stroke="white" stroke-width="1.5" opacity="1.0"/>
+<circle cx="815.00" cy="226.18" r="5.00" fill="#2f6fbb" stroke="white" stroke-width="1.5" opacity="1.0"/>
+<circle cx="1058.00" cy="243.25" r="5.00" fill="#2f6fbb" stroke="white" stroke-width="1.5" opacity="1.0"/>
+<polyline points="86.00,204.05 329.00,227.80 572.00,246.70 815.00,261.47 1058.00,275.89" fill="none" stroke="#f28e2b" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
+<circle cx="86.00" cy="204.05" r="5.00" fill="#f28e2b" stroke="white" stroke-width="1.5" opacity="1.0"/>
+<circle cx="329.00" cy="227.80" r="5.00" fill="#f28e2b" stroke="white" stroke-width="1.5" opacity="1.0"/>
+<circle cx="572.00" cy="246.70" r="5.00" fill="#f28e2b" stroke="white" stroke-width="1.5" opacity="1.0"/>
+<circle cx="815.00" cy="261.47" r="5.00" fill="#f28e2b" stroke="white" stroke-width="1.5" opacity="1.0"/>
+<circle cx="1058.00" cy="275.89" r="5.00" fill="#f28e2b" stroke="white" stroke-width="1.5" opacity="1.0"/>
+</svg>

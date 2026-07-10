@@ -1,0 +1,5 @@
+Core results are not complete. Run scripts/run_core.sh before scripts/run_extras.sh.
+no core rows: LM/partA/results/results_partA.csv
+no core rows: LM/partB/results/results_partB.csv
+no core rows: NLU/partA/results/results_partA.csv
+no core rows: NLU/partB/results/results_partB.csv

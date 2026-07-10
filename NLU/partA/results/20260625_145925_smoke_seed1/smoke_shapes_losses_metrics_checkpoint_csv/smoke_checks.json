@@ -1,0 +1,18 @@
+{
+  "input_shape": [
+    4,
+    17
+  ],
+  "intent_logits_shape": [
+    4,
+    26
+  ],
+  "intent_loss": 3.1432526111602783,
+  "slot_logits_shape": [
+    4,
+    17,
+    130
+  ],
+  "slot_loss": 4.9196367263793945,
+  "total_loss": 8.062889099121094
+}

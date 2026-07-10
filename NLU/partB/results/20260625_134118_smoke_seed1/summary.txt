@@ -1,0 +1,13 @@
+NLU/partB pretrained BERT and GPT-2 ATIS intent + slot models
+Run directory: 20260625_134118_smoke_seed1
+Mode/seed/device: smoke / 1 / cpu
+bert backend: tiny_fallback_bert_smoke
+bert test intent accuracy: 0.875
+bert test slot token F1: 0.0
+bert train time seconds: 0.081
+bert peak CUDA memory MB: 0.0
+gpt2 backend: tiny_fallback_gpt2_smoke
+gpt2 test intent accuracy: 0.875
+gpt2 test slot token F1: 0.035294
+gpt2 train time seconds: 0.064
+gpt2 peak CUDA memory MB: 0.0

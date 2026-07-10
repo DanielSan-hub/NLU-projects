@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1300" height="760" viewBox="0 0 1300 760" role="img" aria-label="Scratch GPT2 ablations: dev PPL and train-dev gap">
+<rect width="1300" height="760" fill="#ffffff"/>
+<style>
+text{font-family:Inter,Segoe UI,Arial,sans-serif;}
+.title{font-weight:700;fill:#20242a;}
+.subtitle{fill:#59616f;}
+.axis{stroke:#4b5563;stroke-width:1;}
+.grid{stroke:#d9dee7;stroke-width:1;}
+.tick{fill:#59616f;font-size:12px;}
+.label{fill:#20242a;font-size:13px;}
+.legend{fill:#20242a;font-size:13px;}
+</style>
+<text x="60.00" y="42.00" font-size="24" fill="#20242a" text-anchor="start" font-weight="700" class="title">Scratch GPT2 ablations: dev PPL and train-dev gap</text>
+<text x="60.00" y="68.00" font-size="14" fill="#20242a" text-anchor="start" font-weight="400" class="subtitle">Lower bars are better; a larger gap indicates stronger train/dev separation.</text>
+<rect x="86.00" y="82.00" width="14.00" height="14.00" rx="2" fill="#2f6fbb" stroke="none" opacity="1.0"/>
+<text x="106.00" y="94.00" font-size="13" fill="#20242a" text-anchor="start" font-weight="400" class="legend">Dev PPL</text>
+<rect x="183.80" y="82.00" width="14.00" height="14.00" rx="2" fill="#e15759" stroke="none" opacity="1.0"/>
+<text x="203.80" y="94.00" font-size="13" fill="#20242a" text-anchor="start" font-weight="400" class="legend">Train-dev gap</text>
+<line x1="86.00" y1="582.00" x2="1208.00" y2="582.00" stroke="#d9dee7" stroke-width="1"/>
+<text x="76.00" y="586.00" font-size="12" fill="#59616f" text-anchor="end" font-weight="400">0</text>
+<line x1="86.00" y1="488.00" x2="1208.00" y2="488.00" stroke="#d9dee7" stroke-width="1"/>
+<text x="76.00" y="492.00" font-size="12" fill="#59616f" text-anchor="end" font-weight="400">17.92</text>
+<line x1="86.00" y1="394.00" x2="1208.00" y2="394.00" stroke="#d9dee7" stroke-width="1"/>
+<text x="76.00" y="398.00" font-size="12" fill="#59616f" text-anchor="end" font-weight="400">35.85</text>
+<line x1="86.00" y1="300.00" x2="1208.00" y2="300.00" stroke="#d9dee7" stroke-width="1"/>
+<text x="76.00" y="304.00" font-size="12" fill="#59616f" text-anchor="end" font-weight="400">53.77</text>
+<line x1="86.00" y1="206.00" x2="1208.00" y2="206.00" stroke="#d9dee7" stroke-width="1"/>
+<text x="76.00" y="210.00" font-size="12" fill="#59616f" text-anchor="end" font-weight="400">71.7</text>
+<line x1="86.00" y1="112.00" x2="1208.00" y2="112.00" stroke="#d9dee7" stroke-width="1"/>
+<text x="76.00" y="116.00" font-size="12" fill="#59616f" text-anchor="end" font-weight="400">89.62</text>
+<text x="1218.00" y="586.00" font-size="12" fill="#59616f" text-anchor="start" font-weight="400">0</text>
+<text x="1218.00" y="492.00" font-size="12" fill="#59616f" text-anchor="start" font-weight="400">0.136</text>
+<text x="1218.00" y="398.00" font-size="12" fill="#59616f" text-anchor="start" font-weight="400">0.271</text>
+<text x="1218.00" y="304.00" font-size="12" fill="#59616f" text-anchor="start" font-weight="400">0.407</text>
+<text x="1218.00" y="210.00" font-size="12" fill="#59616f" text-anchor="start" font-weight="400">0.543</text>
+<text x="1218.00" y="116.00" font-size="12" fill="#59616f" text-anchor="start" font-weight="400">0.678</text>
+<line x1="86.00" y1="112.00" x2="86.00" y2="582.00" stroke="#20242a" stroke-width="1"/>
+<line x1="1208.00" y1="112.00" x2="1208.00" y2="582.00" stroke="#20242a" stroke-width="1"/>
+<line x1="86.00" y1="582.00" x2="1208.00" y2="582.00" stroke="#20242a" stroke-width="1"/>
+<text x="20.00" y="347.00" font-size="13" fill="#59616f" text-anchor="middle" font-weight="400" transform="rotate(-90 20.00 347.00)">Dev PPL</text>
+<text x="1275.00" y="347.00" font-size="13" fill="#59616f" text-anchor="middle" font-weight="400" transform="rotate(90 1275.00 347.00)">Train-dev gap</text>
+<rect x="110.93" y="226.84" width="74.80" height="355.16" rx="2" fill="#2f6fbb" stroke="none" opacity="1.0"/>
+<text x="145.33" y="600.00" font-size="12" fill="#20242a" text-anchor="end" font-weight="400" transform="rotate(-35 145.33 600.00)">base</text>
+<rect x="235.60" y="248.94" width="74.80" height="333.06" rx="2" fill="#2f6fbb" stroke="none" opacity="1.0"/>
+<text x="270.00" y="600.00" font-size="12" fill="#20242a" text-anchor="end" font-weight="400" transform="rotate(-35 270.00 600.00)">lr1e-3</text>
+<rect x="360.27" y="173.30" width="74.80" height="408.70" rx="2" fill="#2f6fbb" stroke="none" opacity="1.0"/>
+<text x="394.67" y="600.00" font-size="12" fill="#20242a" text-anchor="end" font-weight="400" transform="rotate(-35 394.67 600.00)">lr3e-4</text>
+<rect x="484.93" y="253.58" width="74.80" height="328.42" rx="2" fill="#2f6fbb" stroke="none" opacity="1.0"/>
+<text x="519.33" y="600.00" font-size="12" fill="#20242a" text-anchor="end" font-weight="400" transform="rotate(-35 519.33 600.00)">d192</text>
+<rect x="609.60" y="224.55" width="74.80" height="357.45" rx="2" fill="#2f6fbb" stroke="none" opacity="1.0"/>
+<text x="644.00" y="600.00" font-size="12" fill="#20242a" text-anchor="end" font-weight="400" transform="rotate(-35 644.00 600.00)">h8</text>
+<rect x="734.27" y="231.73" width="74.80" height="350.27" rx="2" fill="#2f6fbb" stroke="none" opacity="1.0"/>
+<text x="768.67" y="600.00" font-size="12" fill="#20242a" text-anchor="end" font-weight="400" transform="rotate(-35 768.67 600.00)">L3</text>
+<rect x="858.93" y="226.29" width="74.80" height="355.71" rx="2" fill="#2f6fbb" stroke="none" opacity="1.0"/>
+<text x="893.33" y="600.00" font-size="12" fill="#20242a" text-anchor="end" font-weight="400" transform="rotate(-35 893.33 600.00)">ff768</text>
+<rect x="983.60" y="227.73" width="74.80" height="354.27" rx="2" fill="#2f6fbb" stroke="none" opacity="1.0"/>
+<text x="1018.00" y="600.00" font-size="12" fill="#20242a" text-anchor="end" font-weight="400" transform="rotate(-35 1018.00 600.00)">drop0</text>
+<rect x="1108.27" y="193.05" width="74.80" height="388.95" rx="2" fill="#2f6fbb" stroke="none" opacity="1.0"/>
+<text x="1142.67" y="600.00" font-size="12" fill="#20242a" text-anchor="end" font-weight="400" transform="rotate(-35 1142.67 600.00)">drop.2</text>
+<polyline points="148.33,407.20 273.00,313.98 397.67,475.86 522.33,277.99 647.00,404.33 771.67,408.86 896.33,405.70 1021.00,190.33 1145.67,486.22" fill="none" stroke="#e15759" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
+<circle cx="148.33" cy="407.20" r="5.00" fill="#e15759" stroke="white" stroke-width="1.5" opacity="1.0"/>
+<circle cx="273.00" cy="313.98" r="5.00" fill="#e15759" stroke="white" stroke-width="1.5" opacity="1.0"/>
+<circle cx="397.67" cy="475.86" r="5.00" fill="#e15759" stroke="white" stroke-width="1.5" opacity="1.0"/>
+<circle cx="522.33" cy="277.99" r="5.00" fill="#e15759" stroke="white" stroke-width="1.5" opacity="1.0"/>
+<circle cx="647.00" cy="404.33" r="5.00" fill="#e15759" stroke="white" stroke-width="1.5" opacity="1.0"/>
+<circle cx="771.67" cy="408.86" r="5.00" fill="#e15759" stroke="white" stroke-width="1.5" opacity="1.0"/>
+<circle cx="896.33" cy="405.70" r="5.00" fill="#e15759" stroke="white" stroke-width="1.5" opacity="1.0"/>
+<circle cx="1021.00" cy="190.33" r="5.00" fill="#e15759" stroke="white" stroke-width="1.5" opacity="1.0"/>
+<circle cx="1145.67" cy="486.22" r="5.00" fill="#e15759" stroke="white" stroke-width="1.5" opacity="1.0"/>
+</svg>

@@ -1,0 +1,57 @@
+{
+  "actual_device": "cpu",
+  "amp_requested": false,
+  "backbone": {
+    "causal": true,
+    "family": "gpt2",
+    "key": "gpt2",
+    "model_name": null,
+    "pooling": "last"
+  },
+  "backbone_key": "gpt2",
+  "backbones": [
+    {
+      "causal": false,
+      "family": "bert",
+      "key": "bert",
+      "model_name": null,
+      "pooling": "cls"
+    },
+    {
+      "causal": true,
+      "family": "gpt2",
+      "key": "gpt2",
+      "model_name": null,
+      "pooling": "last"
+    }
+  ],
+  "backend": "tiny_fallback_gpt2_smoke",
+  "batch_size": 4,
+  "dev_examples": 497,
+  "dropout": 0.1,
+  "epochs": 1,
+  "grad_clip": 1.0,
+  "intent_loss_weight": 1.0,
+  "lr": 0.0005,
+  "max_eval_batches": 2,
+  "max_length": 32,
+  "max_train_batches": 2,
+  "mode": "smoke",
+  "n_embd": 64,
+  "n_head": 2,
+  "n_layer": 1,
+  "num_intents": 26,
+  "num_slots": 129,
+  "num_workers": 0,
+  "pad_id": 0,
+  "part": "NLU/partB",
+  "pin_memory": false,
+  "requested_device": "cpu",
+  "seed": 1,
+  "slot_loss_weight": 1.0,
+  "task": "pretrained_bert_gpt2_atis_intent_slots",
+  "test_examples": 893,
+  "train_examples": 4481,
+  "vocab_size": 866,
+  "weight_decay": 0.01
+}

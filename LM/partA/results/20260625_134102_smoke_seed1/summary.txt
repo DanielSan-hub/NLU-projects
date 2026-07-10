@@ -1,0 +1,9 @@
+LM/partA scratch GPT-style PTB language model
+Run directory: 20260625_134102_smoke_seed1
+Mode/seed/device: smoke / 1 / cpu
+Best validation loss: 9.2193
+Test loss/perplexity: 9.2093 / 9989.52
+Train time seconds: 0.10
+Tokens per second: 2571.22
+Peak CUDA memory MB: 0.00
+Parameters total/trainable: 692224 / 692224

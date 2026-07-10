@@ -1,0 +1,8 @@
+Mini-Project 2A: scratch GPT2 for ATIS multitask NLU
+Mode/device/seed: smoke / cpu / 1
+Final best configuration: smoke_shapes_losses_metrics_checkpoint_csv
+Best dev intent accuracy: 0.625
+Best dev slot CoNLL F1: 0.040404
+Test intent accuracy: 0.875
+Test slot CoNLL F1: 0.014599
+Checkpoint: results/20260625_143221_smoke_seed1/smoke_shapes_losses_metrics_checkpoint_csv/best.pt

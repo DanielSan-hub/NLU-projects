@@ -1,0 +1,7 @@
+C:\Users\Utente\nlu_labs\NLU-2026-Labs\NLU\partB\model.py:56: UserWarning: enable_nested_tensor is True, but self.use_nested_tensor is False because encoder_layer.norm_first was True
+  self.encoder = nn.TransformerEncoder(layer, num_layers=n_layer)
+C:\Users\Utente\nlu_labs\NLU-2026-Labs\NLU\partB\model.py:56: UserWarning: enable_nested_tensor is True, but self.use_nested_tensor is False because encoder_layer.norm_first was True
+  self.encoder = nn.TransformerEncoder(layer, num_layers=n_layer)
+bert epoch=1 train_loss=7.7542 dev_loss=7.3822 intent_acc=0.750 slot_f1=0.000
+gpt2 epoch=1 train_loss=8.0211 dev_loss=7.6641 intent_acc=0.625 slot_f1=0.057
+Done. Results appended to C:\Users\Utente\nlu_labs\NLU-2026-Labs\NLU\partB\results\results.csv

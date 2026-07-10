@@ -1,16 +1,31 @@
-# LM Part B — experiment design
+# LM PartB Report Notes
 
-## Question
+Pretrained GPT2 with manual LoRA on Penn Treebank.
 
-How effectively can manual low-rank adaptation specialize pretrained GPT-2 for Penn Treebank while training only a small fraction of its parameters?
+Best mandatory model: `rank8_alpha16_qkv`
 
-## Evidence to report
+Best overall model including optional extras: `extra_rank16_alpha32_qkv`
 
-- validation and test perplexity;
-- LoRA rank, scaling, dropout, and targeted projection;
-- total versus trainable parameter counts;
-- a comparison against the required baseline under the same evaluation protocol.
+| Experiment | Trainable Params | Dev PPL | Test PPL |
+| --- | ---: | ---: | ---: |
+| rank1_alpha2_qkv | 55K | 36.155 | 32.030 |
+| rank2_alpha4_qkv | 111K | 33.733 | 29.974 |
+| rank4_alpha8_qkv | 221K | 31.720 | 28.338 |
+| rank8_alpha16_qkv | 442K | 30.114 | 27.059 |
+| extra_rank16_alpha32_qkv | 885K | 28.637 | 25.811 |
+| extra_v_only_r4_alpha8 | 74K | 35.387 | 31.412 |
+| extra_q_only_r4_alpha8 | 74K | 49.119 | 43.250 |
+| extra_k_only_r4_alpha8 | 74K | 49.377 | 43.608 |
 
-## Status
+Implementation details to mention:
 
-The manual LoRA implementation and run harness are present. No quantitative result is claimed in this public snapshot; populate the final report from `LM/partB/results/results_partB.csv` after the GPU core run.
+- Loaded `openai-community/gpt2`.
+- All pretrained parameters frozen.
+- Manual LoRA, no PEFT.
+- HuggingFace GPT2 fused `c_attn` handled by adding LoRA deltas to Q/K/V slices.
+- LoRA A random, B exactly zero, so step-zero base and LoRA logits matched.
+- Only LoRA parameters were trainable.
+
+Interpretation:
+
+LoRA strongly beat scratch GPT2 while training far fewer parameters. QKV LoRA was much better than Q-only or K-only; V-only helped but was not enough.

@@ -1,0 +1,2 @@
+epoch,train_loss,dev_loss,dev_ppl,is_best
+1,5.903077,5.334512,207.371476,True

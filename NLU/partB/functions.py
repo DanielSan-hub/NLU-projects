@@ -408,9 +408,4 @@ def model_configs_for_mode(mode: str) -> tuple[list[dict], list[dict]]:
             {**full_common, "model_name": "bert_ontology_report", "pretrained_model": BERT_MODEL, "pooling": "cls", "use_ontology_gate": True},
         ]
         return core, extras
-    if mode == "extras":
-        return [], [
-            {**full_common, "model_name": "gpt2_mean_pool", "pretrained_model": GPT2_MODEL, "pooling": "mean"},
-            {**full_common, "model_name": "bert_ontology_report", "pretrained_model": BERT_MODEL, "pooling": "cls", "use_ontology_gate": True},
-        ]
     raise ValueError(f"Unknown mode={mode}")

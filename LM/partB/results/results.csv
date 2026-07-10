@@ -1,0 +1,2 @@
+run_dir,part,mode,seed,device,backend,amp_requested,amp_enabled_final,train_loss,valid_loss,valid_ppl,test_loss,test_ppl,train_time_seconds,tokens_per_second,peak_memory_mb,total_params,trainable_params,lora_wrapped_modules
+20260625_134108_smoke_seed1,LM/partB,smoke,1,cpu,tiny_fallback_smoke,False,False,9.238837,9.219317,10090.174805,9.209291,9989.516602,0.09,2837.615,0.0,692224,692224,0

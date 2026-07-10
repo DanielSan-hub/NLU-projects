@@ -1,0 +1,13 @@
+C:\Users\Utente\AppData\Local\Programs\Python\Python312\Lib\site-packages\huggingface_hub\file_download.py:949: FutureWarning: `resume_download` is deprecated and will be removed in version 1.0.0. Downloads always resume when possible. If you want to force a new download, use `force_download=True`.
+  warnings.warn(
+C:\Users\Utente\AppData\Local\Programs\Python\Python312\Lib\site-packages\huggingface_hub\file_download.py:949: FutureWarning: `resume_download` is deprecated and will be removed in version 1.0.0. Downloads always resume when possible. If you want to force a new download, use `force_download=True`.
+  warnings.warn(
+bert: input_shape=(2, 32) slot_logits=(2, 32, 129) intent_logits=(2, 26) ignored_labels=35 pooling=cls
+bert epoch=1 train_loss=8.1308 dev_intent_acc=0.000 dev_slot_f1=0.000
+gpt2: input_shape=(2, 32) slot_logits=(2, 32, 129) intent_logits=(2, 26) ignored_labels=35 pooling=last
+gpt2 epoch=1 train_loss=29.1129 dev_intent_acc=0.000 dev_slot_f1=0.000
+
+Comparison table:
+model_name	intent_acc_dev	slot_f1_dev	intent_acc_test	slot_f1_test
+bert	0.0	0.0	0.0	0.0
+gpt2	0.0	0.0	0.0	0.0

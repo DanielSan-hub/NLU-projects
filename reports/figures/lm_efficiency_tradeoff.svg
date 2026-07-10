@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="760" viewBox="0 0 1100 760" role="img" aria-label="LM efficiency trade-off">
+<rect width="1100" height="760" fill="#ffffff"/>
+<style>
+text{font-family:Inter,Segoe UI,Arial,sans-serif;}
+.title{font-weight:700;fill:#20242a;}
+.subtitle{fill:#59616f;}
+.axis{stroke:#4b5563;stroke-width:1;}
+.grid{stroke:#d9dee7;stroke-width:1;}
+.tick{fill:#59616f;font-size:12px;}
+.label{fill:#20242a;font-size:13px;}
+.legend{fill:#20242a;font-size:13px;}
+</style>
+<text x="60.00" y="42.00" font-size="24" fill="#20242a" text-anchor="start" font-weight="700" class="title">LM efficiency trade-off</text>
+<text x="60.00" y="68.00" font-size="14" fill="#20242a" text-anchor="start" font-weight="400" class="subtitle">Dev PPL versus throughput. Lower PPL and higher tokens/s are preferable; point size follows parameter count.</text>
+<line x1="96.00" y1="112.00" x2="96.00" y2="652.00" stroke="#d9dee7" stroke-width="1"/>
+<line x1="96.00" y1="652.00" x2="1052.00" y2="652.00" stroke="#d9dee7" stroke-width="1"/>
+<text x="96.00" y="676.00" font-size="12" fill="#59616f" text-anchor="middle" font-weight="400">4k</text>
+<text x="86.00" y="656.00" font-size="12" fill="#59616f" text-anchor="end" font-weight="400">26.29</text>
+<line x1="287.20" y1="112.00" x2="287.20" y2="652.00" stroke="#d9dee7" stroke-width="1"/>
+<line x1="96.00" y1="544.00" x2="1052.00" y2="544.00" stroke="#d9dee7" stroke-width="1"/>
+<text x="287.20" y="676.00" font-size="12" fill="#59616f" text-anchor="middle" font-weight="400">21k</text>
+<text x="86.00" y="548.00" font-size="12" fill="#59616f" text-anchor="end" font-weight="400">37.38</text>
+<line x1="478.40" y1="112.00" x2="478.40" y2="652.00" stroke="#d9dee7" stroke-width="1"/>
+<line x1="96.00" y1="436.00" x2="1052.00" y2="436.00" stroke="#d9dee7" stroke-width="1"/>
+<text x="478.40" y="676.00" font-size="12" fill="#59616f" text-anchor="middle" font-weight="400">38k</text>
+<text x="86.00" y="440.00" font-size="12" fill="#59616f" text-anchor="end" font-weight="400">48.48</text>
+<line x1="669.60" y1="112.00" x2="669.60" y2="652.00" stroke="#d9dee7" stroke-width="1"/>
+<line x1="96.00" y1="328.00" x2="1052.00" y2="328.00" stroke="#d9dee7" stroke-width="1"/>
+<text x="669.60" y="676.00" font-size="12" fill="#59616f" text-anchor="middle" font-weight="400">55k</text>
+<text x="86.00" y="332.00" font-size="12" fill="#59616f" text-anchor="end" font-weight="400">59.57</text>
+<line x1="860.80" y1="112.00" x2="860.80" y2="652.00" stroke="#d9dee7" stroke-width="1"/>
+<line x1="96.00" y1="220.00" x2="1052.00" y2="220.00" stroke="#d9dee7" stroke-width="1"/>
+<text x="860.80" y="676.00" font-size="12" fill="#59616f" text-anchor="middle" font-weight="400">72k</text>
+<text x="86.00" y="224.00" font-size="12" fill="#59616f" text-anchor="end" font-weight="400">70.66</text>
+<line x1="1052.00" y1="112.00" x2="1052.00" y2="652.00" stroke="#d9dee7" stroke-width="1"/>
+<line x1="96.00" y1="112.00" x2="1052.00" y2="112.00" stroke="#d9dee7" stroke-width="1"/>
+<text x="1052.00" y="676.00" font-size="12" fill="#59616f" text-anchor="middle" font-weight="400">89k</text>
+<text x="86.00" y="116.00" font-size="12" fill="#59616f" text-anchor="end" font-weight="400">81.76</text>
+<line x1="96.00" y1="112.00" x2="96.00" y2="652.00" stroke="#20242a" stroke-width="1"/>
+<line x1="96.00" y1="652.00" x2="1052.00" y2="652.00" stroke="#20242a" stroke-width="1"/>
+<text x="574.00" y="732.00" font-size="13" fill="#59616f" text-anchor="middle" font-weight="400">Tokens per second</text>
+<text x="24.00" y="382.00" font-size="13" fill="#59616f" text-anchor="middle" font-weight="400" transform="rotate(-90 24.00 382.00)">Dev PPL</text>
+<circle cx="986.07" cy="248.62" r="8.42" fill="#2f6fbb" stroke="white" stroke-width="1.8" opacity="0.9"/>
+<circle cx="954.23" cy="289.65" r="8.42" fill="#2f6fbb" stroke="white" stroke-width="1.8" opacity="0.9"/>
+<circle cx="940.61" cy="149.24" r="8.42" fill="#2f6fbb" stroke="white" stroke-width="1.8" opacity="0.9"/>
+<circle cx="743.95" cy="298.26" r="10.18" fill="#2f6fbb" stroke="white" stroke-width="1.8" opacity="0.9"/>
+<text x="752.95" y="291.26" font-size="12" fill="#20242a" text-anchor="start" font-weight="400">d=192</text>
+<circle cx="908.96" cy="244.38" r="8.42" fill="#2f6fbb" stroke="white" stroke-width="1.8" opacity="0.9"/>
+<circle cx="888.91" cy="257.70" r="8.52" fill="#2f6fbb" stroke="white" stroke-width="1.8" opacity="0.9"/>
+<circle cx="929.54" cy="247.60" r="8.49" fill="#2f6fbb" stroke="white" stroke-width="1.8" opacity="0.9"/>
+<circle cx="944.35" cy="250.27" r="8.42" fill="#2f6fbb" stroke="white" stroke-width="1.8" opacity="0.9"/>
+<circle cx="936.19" cy="185.90" r="8.42" fill="#2f6fbb" stroke="white" stroke-width="1.8" opacity="0.9"/>
+<circle cx="164.68" cy="555.95" r="5.69" fill="#f28e2b" stroke="white" stroke-width="1.8" opacity="0.9"/>
+<circle cx="161.93" cy="579.53" r="6.38" fill="#f28e2b" stroke="white" stroke-width="1.8" opacity="0.9"/>
+<circle cx="162.75" cy="599.13" r="7.76" fill="#f28e2b" stroke="white" stroke-width="1.8" opacity="0.9"/>
+<circle cx="162.83" cy="614.76" r="10.53" fill="#f28e2b" stroke="white" stroke-width="1.8" opacity="0.9"/>
+<text x="171.83" y="607.76" font-size="12" fill="#20242a" text-anchor="start" font-weight="400">r8</text>
+<rect x="96.00" y="82.00" width="14.00" height="14.00" rx="2" fill="#2f6fbb" stroke="none" opacity="1.0"/>
+<text x="116.00" y="94.00" font-size="13" fill="#20242a" text-anchor="start" font-weight="400" class="legend">Scratch GPT2</text>
+<rect x="230.80" y="82.00" width="14.00" height="14.00" rx="2" fill="#f28e2b" stroke="none" opacity="1.0"/>
+<text x="250.80" y="94.00" font-size="13" fill="#20242a" text-anchor="start" font-weight="400" class="legend">LoRA GPT2</text>
+</svg>

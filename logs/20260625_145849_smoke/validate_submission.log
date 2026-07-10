@@ -1,0 +1,140 @@
+[PASS] scripts/smoke_all.sh exists
+[PASS] scripts/run_core.sh exists
+[PASS] scripts/run_extras.sh exists
+[PASS] scripts/collect_results.py exists
+[PASS] scripts/validate_submission.py exists
+[PASS] root logs/ exists
+[PASS] root results/ exists
+[PASS] root reports/ exists
+
+== LM/partA ==
+[PASS] LM/partA/ exists
+[PASS] LM/partA/main.py exists
+[PASS] LM/partA/model.py exists
+[PASS] LM/partA/functions.py exists
+[PASS] LM/partA/utils.py exists
+[PASS] LM/partA/README.md exists
+[PASS] LM/partA/dataset/ exists
+[PASS] LM/partA/bin/ exists
+[PASS] LM/partA/results/ exists
+[PASS] LM/partA/main.py supports --mode
+[PASS] LM/partA/main.py supports --device
+[PASS] LM/partA/main.py supports --seed
+[PASS] LM/partA/main.py supports --resume
+[PASS] LM/partA/main.py supports --allow-cpu
+[PASS] LM/partA/main.py supports --amp
+[PASS] LM/partA/main.py supports --log-tensorboard
+[PASS] LM/partA/main.py supports --num-workers
+[PASS] LM/partA/main.py supports --pin-memory
+[PASS] LM/partA/main.py has no absolute local project path
+[PASS] LM/partA/ contains no notebooks
+[PASS] LM/partA/results/results_partA.csv exists
+[PASS] LM/partA/results/results_partA.csv has result rows
+[PASS] reports/LM_partA_report.md exists
+[PASS] LM/partA/results/latest_run.txt exists
+[PASS] LM/partA/results/20260625_145853_smoke_seed1 exists
+[PASS] LM/partA latest run has config.json
+[PASS] LM/partA latest run has summary.txt
+[PASS] LM/partA latest run has best.pt
+[PASS] LM/partA latest run has last.pt
+
+== LM/partB ==
+[PASS] LM/partB/ exists
+[PASS] LM/partB/main.py exists
+[PASS] LM/partB/model.py exists
+[PASS] LM/partB/functions.py exists
+[PASS] LM/partB/utils.py exists
+[PASS] LM/partB/README.md exists
+[PASS] LM/partB/dataset/ exists
+[PASS] LM/partB/bin/ exists
+[PASS] LM/partB/results/ exists
+[PASS] LM/partB/main.py supports --mode
+[PASS] LM/partB/main.py supports --device
+[PASS] LM/partB/main.py supports --seed
+[PASS] LM/partB/main.py supports --resume
+[PASS] LM/partB/main.py supports --allow-cpu
+[PASS] LM/partB/main.py supports --amp
+[PASS] LM/partB/main.py supports --log-tensorboard
+[PASS] LM/partB/main.py supports --num-workers
+[PASS] LM/partB/main.py supports --pin-memory
+[PASS] LM/partB/main.py has no absolute local project path
+[PASS] LM/partB/ contains no notebooks
+[PASS] LM/partB/results/results_partB.csv exists
+[PASS] LM/partB/results/results_partB.csv has result rows
+[PASS] reports/LM_partB_report.md exists
+[PASS] LM/partB/results/latest_run.txt exists
+[PASS] LM/partB/results/20260625_145908_smoke_seed1 exists
+[PASS] LM/partB latest run has config.json
+[PASS] LM/partB latest run has summary.txt
+[PASS] LM/partB latest run has best_lora_adapters.pt
+[PASS] LM/partB latest run has last_lora_adapters.pt
+
+== NLU/partA ==
+[PASS] NLU/partA/ exists
+[PASS] NLU/partA/main.py exists
+[PASS] NLU/partA/model.py exists
+[PASS] NLU/partA/functions.py exists
+[PASS] NLU/partA/utils.py exists
+[PASS] NLU/partA/README.md exists
+[PASS] NLU/partA/dataset/ exists
+[PASS] NLU/partA/bin/ exists
+[PASS] NLU/partA/results/ exists
+[PASS] NLU/partA/main.py supports --mode
+[PASS] NLU/partA/main.py supports --device
+[PASS] NLU/partA/main.py supports --seed
+[PASS] NLU/partA/main.py supports --resume
+[PASS] NLU/partA/main.py supports --allow-cpu
+[PASS] NLU/partA/main.py supports --amp
+[PASS] NLU/partA/main.py supports --log-tensorboard
+[PASS] NLU/partA/main.py supports --num-workers
+[PASS] NLU/partA/main.py supports --pin-memory
+[PASS] NLU/partA/main.py has no absolute local project path
+[PASS] NLU/partA/ contains no notebooks
+[PASS] NLU/partA/results/results_partA.csv exists
+[PASS] NLU/partA/results/results_partA.csv has result rows
+[PASS] reports/NLU_partA_report.md exists
+[PASS] NLU/partA/results/latest_run.txt exists
+[PASS] NLU/partA/results/20260625_145925_smoke_seed1 exists
+[PASS] NLU/partA latest run has config.json
+[PASS] NLU/partA latest run has summary.txt
+[PASS] NLU/partA latest run has best.pt
+[PASS] NLU/partA latest run has last.pt
+
+== NLU/partB ==
+[PASS] NLU/partB/ exists
+[PASS] NLU/partB/main.py exists
+[PASS] NLU/partB/model.py exists
+[PASS] NLU/partB/functions.py exists
+[PASS] NLU/partB/utils.py exists
+[PASS] NLU/partB/README.md exists
+[PASS] NLU/partB/dataset/ exists
+[PASS] NLU/partB/bin/ exists
+[PASS] NLU/partB/results/ exists
+[PASS] NLU/partB/main.py supports --mode
+[PASS] NLU/partB/main.py supports --device
+[PASS] NLU/partB/main.py supports --seed
+[PASS] NLU/partB/main.py supports --resume
+[PASS] NLU/partB/main.py supports --allow-cpu
+[PASS] NLU/partB/main.py supports --amp
+[PASS] NLU/partB/main.py supports --log-tensorboard
+[PASS] NLU/partB/main.py supports --num-workers
+[PASS] NLU/partB/main.py supports --pin-memory
+[PASS] NLU/partB/main.py has no absolute local project path
+[PASS] NLU/partB/ contains no notebooks
+[PASS] NLU/partB/results/results_partB.csv exists
+[PASS] NLU/partB/results/results_partB.csv has result rows
+[PASS] reports/NLU_partB_report.md exists
+[PASS] NLU/partB/results/latest_run.txt exists
+[PASS] NLU/partB/results/20260625_145930_smoke_seed1 exists
+[PASS] NLU/partB latest run has config.json
+[PASS] NLU/partB latest run has summary.txt
+[PASS] NLU/partB latest run has bert/
+[PASS] NLU/partB bert best.pt exists
+[PASS] NLU/partB bert last.pt exists
+[PASS] NLU/partB latest run has gpt2/
+[PASS] NLU/partB gpt2 best.pt exists
+[PASS] NLU/partB gpt2 last.pt exists
+
+== Summary ==
+Warnings: 0
+Validation passed: required structure, scripts, results, checkpoints, and reports are present.

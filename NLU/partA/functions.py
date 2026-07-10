@@ -424,6 +424,4 @@ def experiments_for_mode(mode: str) -> tuple[list[dict], list[dict]]:
         return core_experiments(), []
     if mode == "full":
         return core_experiments(), extra_experiments()
-    if mode == "extras":
-        return [], extra_experiments()
     raise ValueError(f"Unknown mode={mode}")

@@ -1,0 +1,92 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1250" height="760" viewBox="0 0 1250 760" role="img" aria-label="LM/partB optional LoRA loss curves">
+<rect width="1250" height="760" fill="#ffffff"/>
+<style>
+text{font-family:Inter,Segoe UI,Arial,sans-serif;}
+.title{font-weight:700;fill:#20242a;}
+.subtitle{fill:#59616f;}
+</style>
+<text x="60.00" y="42.00" font-size="24" fill="#20242a" text-anchor="start" font-weight="700" class="title">LM/partB optional LoRA loss curves</text>
+<text x="60.00" y="68.00" font-size="14" fill="#59616f" text-anchor="start" font-weight="400" class="subtitle">Target ablations and rank16 optional run. Solid=train, dashed=dev.</text>
+<line x1="88.00" y1="672.00" x2="1202.00" y2="672.00" stroke="#d9dee7" stroke-width="1"/>
+<text x="78.00" y="676.00" font-size="12" fill="#59616f" text-anchor="end" font-weight="400">3.31</text>
+<line x1="88.00" y1="562.80" x2="1202.00" y2="562.80" stroke="#d9dee7" stroke-width="1"/>
+<text x="78.00" y="566.80" font-size="12" fill="#59616f" text-anchor="end" font-weight="400">3.53</text>
+<line x1="88.00" y1="453.60" x2="1202.00" y2="453.60" stroke="#d9dee7" stroke-width="1"/>
+<text x="78.00" y="457.60" font-size="12" fill="#59616f" text-anchor="end" font-weight="400">3.75</text>
+<line x1="88.00" y1="344.40" x2="1202.00" y2="344.40" stroke="#d9dee7" stroke-width="1"/>
+<text x="78.00" y="348.40" font-size="12" fill="#59616f" text-anchor="end" font-weight="400">3.97</text>
+<line x1="88.00" y1="235.20" x2="1202.00" y2="235.20" stroke="#d9dee7" stroke-width="1"/>
+<text x="78.00" y="239.20" font-size="12" fill="#59616f" text-anchor="end" font-weight="400">4.19</text>
+<line x1="88.00" y1="126.00" x2="1202.00" y2="126.00" stroke="#d9dee7" stroke-width="1"/>
+<text x="78.00" y="130.00" font-size="12" fill="#59616f" text-anchor="end" font-weight="400">4.41</text>
+<line x1="88.00" y1="126.00" x2="88.00" y2="672.00" stroke="#d9dee7" stroke-width="1"/>
+<text x="88.00" y="698.00" font-size="12" fill="#59616f" text-anchor="middle" font-weight="400">1</text>
+<line x1="645.00" y1="126.00" x2="645.00" y2="672.00" stroke="#d9dee7" stroke-width="1"/>
+<text x="645.00" y="698.00" font-size="12" fill="#59616f" text-anchor="middle" font-weight="400">2</text>
+<line x1="1202.00" y1="126.00" x2="1202.00" y2="672.00" stroke="#d9dee7" stroke-width="1"/>
+<text x="1202.00" y="698.00" font-size="12" fill="#59616f" text-anchor="middle" font-weight="400">3</text>
+<line x1="88.00" y1="126.00" x2="88.00" y2="672.00" stroke="#20242a" stroke-width="1"/>
+<line x1="88.00" y1="672.00" x2="1202.00" y2="672.00" stroke="#20242a" stroke-width="1"/>
+<text x="645.00" y="732.00" font-size="13" fill="#59616f" text-anchor="middle" font-weight="400">Epoch</text>
+<text x="24.00" y="399.00" font-size="13" fill="#59616f" text-anchor="middle" font-weight="400" transform="rotate(-90 24.00 399.00)">Loss</text>
+<line x1="88.00" y1="91.00" x2="112.00" y2="91.00" stroke="#2f6fbb" stroke-width="3"/>
+<text x="120.00" y="95.00" font-size="12" fill="#20242a" text-anchor="start" font-weight="400">extra q only r4 alpha8 train</text>
+<line x1="327.60" y1="91.00" x2="351.60" y2="91.00" stroke="#2f6fbb" stroke-width="3" stroke-dasharray="7 5"/>
+<text x="359.60" y="95.00" font-size="12" fill="#20242a" text-anchor="start" font-weight="400">extra q only r4 alpha8 dev</text>
+<line x1="552.80" y1="91.00" x2="576.80" y2="91.00" stroke="#f28e2b" stroke-width="3"/>
+<text x="584.80" y="95.00" font-size="12" fill="#20242a" text-anchor="start" font-weight="400">extra k only r4 alpha8 train</text>
+<line x1="792.40" y1="91.00" x2="816.40" y2="91.00" stroke="#f28e2b" stroke-width="3" stroke-dasharray="7 5"/>
+<text x="824.40" y="95.00" font-size="12" fill="#20242a" text-anchor="start" font-weight="400">extra k only r4 alpha8 dev</text>
+<line x1="88.00" y1="113.00" x2="112.00" y2="113.00" stroke="#59a14f" stroke-width="3"/>
+<text x="120.00" y="117.00" font-size="12" fill="#20242a" text-anchor="start" font-weight="400">extra v only r4 alpha8 train</text>
+<line x1="327.60" y1="113.00" x2="351.60" y2="113.00" stroke="#59a14f" stroke-width="3" stroke-dasharray="7 5"/>
+<text x="359.60" y="117.00" font-size="12" fill="#20242a" text-anchor="start" font-weight="400">extra v only r4 alpha8 dev</text>
+<line x1="552.80" y1="113.00" x2="576.80" y2="113.00" stroke="#e15759" stroke-width="3"/>
+<text x="584.80" y="117.00" font-size="12" fill="#20242a" text-anchor="start" font-weight="400">extra qkv dropout r4 alpha8 train</text>
+<line x1="828.40" y1="113.00" x2="852.40" y2="113.00" stroke="#e15759" stroke-width="3" stroke-dasharray="7 5"/>
+<text x="860.40" y="117.00" font-size="12" fill="#20242a" text-anchor="start" font-weight="400">extra qkv dropout r4 alpha8 dev</text>
+<line x1="88.00" y1="135.00" x2="112.00" y2="135.00" stroke="#7b5ea7" stroke-width="3"/>
+<text x="120.00" y="139.00" font-size="12" fill="#20242a" text-anchor="start" font-weight="400">LoRA r16 extra train</text>
+<line x1="270.00" y1="135.00" x2="294.00" y2="135.00" stroke="#7b5ea7" stroke-width="3" stroke-dasharray="7 5"/>
+<text x="302.00" y="139.00" font-size="12" fill="#20242a" text-anchor="start" font-weight="400">LoRA r16 extra dev</text>
+<polyline points="88.00,164.65 645.00,273.03 1202.00,303.77" fill="none" stroke="#2f6fbb" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round"/>
+<circle cx="88.00" cy="164.65" r="4.00" fill="#2f6fbb" stroke="white" stroke-width="1.2"/>
+<circle cx="645.00" cy="273.03" r="4.00" fill="#2f6fbb" stroke="white" stroke-width="1.2"/>
+<circle cx="1202.00" cy="303.77" r="4.00" fill="#2f6fbb" stroke="white" stroke-width="1.2"/>
+<polyline points="88.00,318.92 645.00,358.96 1202.00,381.51" fill="none" stroke="#2f6fbb" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round" stroke-dasharray="7 5"/>
+<circle cx="88.00" cy="318.92" r="4.00" fill="#2f6fbb" stroke="white" stroke-width="1.2"/>
+<circle cx="645.00" cy="358.96" r="4.00" fill="#2f6fbb" stroke="white" stroke-width="1.2"/>
+<circle cx="1202.00" cy="381.51" r="4.00" fill="#2f6fbb" stroke="white" stroke-width="1.2"/>
+<polyline points="88.00,166.66 645.00,264.26 1202.00,291.07" fill="none" stroke="#f28e2b" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round"/>
+<circle cx="88.00" cy="166.66" r="4.00" fill="#f28e2b" stroke="white" stroke-width="1.2"/>
+<circle cx="645.00" cy="264.26" r="4.00" fill="#f28e2b" stroke="white" stroke-width="1.2"/>
+<circle cx="1202.00" cy="291.07" r="4.00" fill="#f28e2b" stroke="white" stroke-width="1.2"/>
+<polyline points="88.00,321.87 645.00,362.40 1202.00,378.93" fill="none" stroke="#f28e2b" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round" stroke-dasharray="7 5"/>
+<circle cx="88.00" cy="321.87" r="4.00" fill="#f28e2b" stroke="white" stroke-width="1.2"/>
+<circle cx="645.00" cy="362.40" r="4.00" fill="#f28e2b" stroke="white" stroke-width="1.2"/>
+<circle cx="1202.00" cy="378.93" r="4.00" fill="#f28e2b" stroke="white" stroke-width="1.2"/>
+<polyline points="88.00,394.67 645.00,469.83 1202.00,489.03" fill="none" stroke="#59a14f" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round"/>
+<circle cx="88.00" cy="394.67" r="4.00" fill="#59a14f" stroke="white" stroke-width="1.2"/>
+<circle cx="645.00" cy="469.83" r="4.00" fill="#59a14f" stroke="white" stroke-width="1.2"/>
+<circle cx="1202.00" cy="489.03" r="4.00" fill="#59a14f" stroke="white" stroke-width="1.2"/>
+<polyline points="88.00,511.13 645.00,532.49 1202.00,543.37" fill="none" stroke="#59a14f" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round" stroke-dasharray="7 5"/>
+<circle cx="88.00" cy="511.13" r="4.00" fill="#59a14f" stroke="white" stroke-width="1.2"/>
+<circle cx="645.00" cy="532.49" r="4.00" fill="#59a14f" stroke="white" stroke-width="1.2"/>
+<circle cx="1202.00" cy="543.37" r="4.00" fill="#59a14f" stroke="white" stroke-width="1.2"/>
+<polyline points="88.00,445.55 645.00,524.85 1202.00,547.20" fill="none" stroke="#e15759" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round"/>
+<circle cx="88.00" cy="445.55" r="4.00" fill="#e15759" stroke="white" stroke-width="1.2"/>
+<circle cx="645.00" cy="524.85" r="4.00" fill="#e15759" stroke="white" stroke-width="1.2"/>
+<circle cx="1202.00" cy="547.20" r="4.00" fill="#e15759" stroke="white" stroke-width="1.2"/>
+<polyline points="88.00,557.06 645.00,581.19 1202.00,595.17" fill="none" stroke="#e15759" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round" stroke-dasharray="7 5"/>
+<circle cx="88.00" cy="557.06" r="4.00" fill="#e15759" stroke="white" stroke-width="1.2"/>
+<circle cx="645.00" cy="581.19" r="4.00" fill="#e15759" stroke="white" stroke-width="1.2"/>
+<circle cx="1202.00" cy="595.17" r="4.00" fill="#e15759" stroke="white" stroke-width="1.2"/>
+<polyline points="88.00,498.39 645.00,588.35 1202.00,619.97" fill="none" stroke="#7b5ea7" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round"/>
+<circle cx="88.00" cy="498.39" r="4.00" fill="#7b5ea7" stroke="white" stroke-width="1.2"/>
+<circle cx="645.00" cy="588.35" r="4.00" fill="#7b5ea7" stroke="white" stroke-width="1.2"/>
+<circle cx="1202.00" cy="619.97" r="4.00" fill="#7b5ea7" stroke="white" stroke-width="1.2"/>
+<polyline points="88.00,602.32 645.00,629.87 1202.00,647.84" fill="none" stroke="#7b5ea7" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round" stroke-dasharray="7 5"/>
+<circle cx="88.00" cy="602.32" r="4.00" fill="#7b5ea7" stroke="white" stroke-width="1.2"/>
+<circle cx="645.00" cy="629.87" r="4.00" fill="#7b5ea7" stroke="white" stroke-width="1.2"/>
+<circle cx="1202.00" cy="647.84" r="4.00" fill="#7b5ea7" stroke="white" stroke-width="1.2"/>
+</svg>

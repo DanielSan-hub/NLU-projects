@@ -1,0 +1,6 @@
+Collected 17 rows into results\master_results.csv
+Wrote summary to results\summary.md
+Best LM/partA: smoke_shapes_loss_ppl_checkpoint_csv (mode=smoke, dev_ppl=47720.5)
+Best LM/partB: smoke_lora_qkv_r2_alpha4 (mode=smoke, dev_ppl=207.371)
+Best NLU/partA: smoke_shapes_losses_metrics_checkpoint_csv (mode=smoke, mean(dev intent acc, dev slot f1)=0.332702)
+Best NLU/partB: bert (mode=smoke, mean(dev intent acc, dev slot f1)=0)

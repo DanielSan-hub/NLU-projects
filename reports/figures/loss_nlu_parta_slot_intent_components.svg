@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1250" height="760" viewBox="0 0 1250 760" role="img" aria-label="NLU/partA loss components">
+<rect width="1250" height="760" fill="#ffffff"/>
+<style>
+text{font-family:Inter,Segoe UI,Arial,sans-serif;}
+.title{font-weight:700;fill:#20242a;}
+.subtitle{fill:#59616f;}
+</style>
+<text x="60.00" y="42.00" font-size="24" fill="#20242a" text-anchor="start" font-weight="700" class="title">NLU/partA loss components</text>
+<text x="60.00" y="68.00" font-size="14" fill="#59616f" text-anchor="start" font-weight="400" class="subtitle">Slot loss and intent loss for the two strongest scratch GPT2 configurations.</text>
+<line x1="88.00" y1="672.00" x2="1202.00" y2="672.00" stroke="#d9dee7" stroke-width="1"/>
+<text x="78.00" y="676.00" font-size="12" fill="#59616f" text-anchor="end" font-weight="400">0.00</text>
+<line x1="88.00" y1="562.80" x2="1202.00" y2="562.80" stroke="#d9dee7" stroke-width="1"/>
+<text x="78.00" y="566.80" font-size="12" fill="#59616f" text-anchor="end" font-weight="400">0.43</text>
+<line x1="88.00" y1="453.60" x2="1202.00" y2="453.60" stroke="#d9dee7" stroke-width="1"/>
+<text x="78.00" y="457.60" font-size="12" fill="#59616f" text-anchor="end" font-weight="400">0.87</text>
+<line x1="88.00" y1="344.40" x2="1202.00" y2="344.40" stroke="#d9dee7" stroke-width="1"/>
+<text x="78.00" y="348.40" font-size="12" fill="#59616f" text-anchor="end" font-weight="400">1.30</text>
+<line x1="88.00" y1="235.20" x2="1202.00" y2="235.20" stroke="#d9dee7" stroke-width="1"/>
+<text x="78.00" y="239.20" font-size="12" fill="#59616f" text-anchor="end" font-weight="400">1.74</text>
+<line x1="88.00" y1="126.00" x2="1202.00" y2="126.00" stroke="#d9dee7" stroke-width="1"/>
+<text x="78.00" y="130.00" font-size="12" fill="#59616f" text-anchor="end" font-weight="400">2.17</text>
+<line x1="146.63" y1="126.00" x2="146.63" y2="672.00" stroke="#d9dee7" stroke-width="1"/>
+<text x="146.63" y="698.00" font-size="12" fill="#59616f" text-anchor="middle" font-weight="400">2</text>
+<line x1="263.89" y1="126.00" x2="263.89" y2="672.00" stroke="#d9dee7" stroke-width="1"/>
+<text x="263.89" y="698.00" font-size="12" fill="#59616f" text-anchor="middle" font-weight="400">4</text>
+<line x1="381.16" y1="126.00" x2="381.16" y2="672.00" stroke="#d9dee7" stroke-width="1"/>
+<text x="381.16" y="698.00" font-size="12" fill="#59616f" text-anchor="middle" font-weight="400">6</text>
+<line x1="498.42" y1="126.00" x2="498.42" y2="672.00" stroke="#d9dee7" stroke-width="1"/>
+<text x="498.42" y="698.00" font-size="12" fill="#59616f" text-anchor="middle" font-weight="400">8</text>
+<line x1="615.68" y1="126.00" x2="615.68" y2="672.00" stroke="#d9dee7" stroke-width="1"/>
+<text x="615.68" y="698.00" font-size="12" fill="#59616f" text-anchor="middle" font-weight="400">10</text>
+<line x1="732.95" y1="126.00" x2="732.95" y2="672.00" stroke="#d9dee7" stroke-width="1"/>
+<text x="732.95" y="698.00" font-size="12" fill="#59616f" text-anchor="middle" font-weight="400">12</text>
+<line x1="850.21" y1="126.00" x2="850.21" y2="672.00" stroke="#d9dee7" stroke-width="1"/>
+<text x="850.21" y="698.00" font-size="12" fill="#59616f" text-anchor="middle" font-weight="400">14</text>
+<line x1="967.47" y1="126.00" x2="967.47" y2="672.00" stroke="#d9dee7" stroke-width="1"/>
+<text x="967.47" y="698.00" font-size="12" fill="#59616f" text-anchor="middle" font-weight="400">16</text>
+<line x1="1084.74" y1="126.00" x2="1084.74" y2="672.00" stroke="#d9dee7" stroke-width="1"/>
+<text x="1084.74" y="698.00" font-size="12" fill="#59616f" text-anchor="middle" font-weight="400">18</text>
+<line x1="1202.00" y1="126.00" x2="1202.00" y2="672.00" stroke="#d9dee7" stroke-width="1"/>
+<text x="1202.00" y="698.00" font-size="12" fill="#59616f" text-anchor="middle" font-weight="400">20</text>
+<line x1="88.00" y1="126.00" x2="88.00" y2="672.00" stroke="#20242a" stroke-width="1"/>
+<line x1="88.00" y1="672.00" x2="1202.00" y2="672.00" stroke="#20242a" stroke-width="1"/>
+<text x="645.00" y="732.00" font-size="13" fill="#59616f" text-anchor="middle" font-weight="400">Epoch</text>
+<text x="24.00" y="399.00" font-size="13" fill="#59616f" text-anchor="middle" font-weight="400" transform="rotate(-90 24.00 399.00)">Loss</text>
+<line x1="88.00" y1="91.00" x2="112.00" y2="91.00" stroke="#2f6fbb" stroke-width="3"/>
+<text x="120.00" y="95.00" font-size="12" fill="#20242a" text-anchor="start" font-weight="400">d=192 slot loss</text>
+<line x1="234.00" y1="91.00" x2="258.00" y2="91.00" stroke="#f28e2b" stroke-width="3"/>
+<text x="266.00" y="95.00" font-size="12" fill="#20242a" text-anchor="start" font-weight="400">d=192 intent loss</text>
+<line x1="394.40" y1="91.00" x2="418.40" y2="91.00" stroke="#59a14f" stroke-width="3"/>
+<text x="426.40" y="95.00" font-size="12" fill="#20242a" text-anchor="start" font-weight="400">heads=8 slot loss</text>
+<line x1="554.80" y1="91.00" x2="578.80" y2="91.00" stroke="#e15759" stroke-width="3"/>
+<text x="586.80" y="95.00" font-size="12" fill="#20242a" text-anchor="start" font-weight="400">heads=8 intent loss</text>
+<polyline points="88.00,274.61 146.63,540.79 205.26,604.45 263.89,628.57 322.53,639.12 381.16,646.65 439.79,651.55 498.42,654.24 557.05,656.21 615.68,658.14 674.32,659.53 732.95,660.11 791.58,661.39 850.21,662.65 908.84,663.35 967.47,663.51 1026.11,664.26 1084.74,664.59 1143.37,665.21 1202.00,666.07" fill="none" stroke="#2f6fbb" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round"/>
+<polyline points="88.00,457.42 146.63,608.69 205.26,639.86 263.89,649.19 322.53,655.29 381.16,658.17 439.79,661.89 498.42,658.34 557.05,660.89 615.68,663.79 674.32,666.45 732.95,663.40 791.58,667.79 850.21,667.31 908.84,667.89 967.47,666.50 1026.11,668.05 1084.74,668.17 1143.37,667.69 1202.00,668.33" fill="none" stroke="#f28e2b" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round"/>
+<polyline points="88.00,166.27 146.63,501.67 205.26,581.34 263.89,610.77 322.53,626.76 381.16,637.37 439.79,644.40 498.42,648.82 557.05,652.51 615.68,654.31 674.32,656.13 732.95,658.32 791.58,658.92 850.21,660.02 908.84,661.31 967.47,662.55 1026.11,662.98 1084.74,663.62 1143.37,664.04 1202.00,664.64" fill="none" stroke="#59a14f" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round"/>
+<polyline points="88.00,399.28 146.63,583.89 205.26,625.78 263.89,641.09 322.53,651.87 381.16,657.00 439.79,661.52 498.42,663.06 557.05,661.93 615.68,664.67 674.32,664.63 732.95,666.26 791.58,665.49 850.21,665.03 908.84,669.60 967.47,667.92 1026.11,667.27 1084.74,667.85 1143.37,666.64 1202.00,667.66" fill="none" stroke="#e15759" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round"/>
+</svg>

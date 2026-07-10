@@ -1,0 +1,10 @@
+NLU/partB model: bert
+Pretrained model: bert-base-uncased
+Pooling: cls
+Best epoch: 1
+Best dev intent accuracy: 0.0000
+Best dev slot CoNLL F1: 0.0000
+Test intent accuracy: 0.0000
+Test slot CoNLL F1: 0.0000
+Test semantic frame accuracy: 0.0000
+Checkpoint: results/20260625_145930_smoke_seed1/bert/best.pt

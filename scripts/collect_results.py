@@ -7,23 +7,15 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 PART_RESULT_FILES = [
     "LM/partA/results/results_partA.csv",
-    "LM/partA/results/results_partA_extra.csv",
     "LM/partB/results/results_partB.csv",
-    "LM/partB/results/results_partB_extra.csv",
     "NLU/partA/results/results_partA.csv",
-    "NLU/partA/results/results_partA_extra.csv",
     "NLU/partB/results/results_partB.csv",
-    "NLU/partB/results/results_partB_extra.csv",
 ]
 PART_BY_RESULT = {
     "LM/partA/results/results_partA.csv": "LM/partA",
-    "LM/partA/results/results_partA_extra.csv": "LM/partA",
     "LM/partB/results/results_partB.csv": "LM/partB",
-    "LM/partB/results/results_partB_extra.csv": "LM/partB",
     "NLU/partA/results/results_partA.csv": "NLU/partA",
-    "NLU/partA/results/results_partA_extra.csv": "NLU/partA",
     "NLU/partB/results/results_partB.csv": "NLU/partB",
-    "NLU/partB/results/results_partB_extra.csv": "NLU/partB",
 }
 
 

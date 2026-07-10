@@ -1,0 +1,80 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1250" height="760" viewBox="0 0 1250 760" role="img" aria-label="LM/partB loss curves: LoRA rank sweep">
+<rect width="1250" height="760" fill="#ffffff"/>
+<style>
+text{font-family:Inter,Segoe UI,Arial,sans-serif;}
+.title{font-weight:700;fill:#20242a;}
+.subtitle{fill:#59616f;}
+</style>
+<text x="60.00" y="42.00" font-size="24" fill="#20242a" text-anchor="start" font-weight="700" class="title">LM/partB loss curves: LoRA rank sweep</text>
+<text x="60.00" y="68.00" font-size="14" fill="#59616f" text-anchor="start" font-weight="400" class="subtitle">Solid lines are train loss; dashed lines are dev loss. Higher rank consistently lowers loss.</text>
+<line x1="88.00" y1="672.00" x2="1202.00" y2="672.00" stroke="#d9dee7" stroke-width="1"/>
+<text x="78.00" y="676.00" font-size="12" fill="#59616f" text-anchor="end" font-weight="400">3.38</text>
+<line x1="88.00" y1="562.80" x2="1202.00" y2="562.80" stroke="#d9dee7" stroke-width="1"/>
+<text x="78.00" y="566.80" font-size="12" fill="#59616f" text-anchor="end" font-weight="400">3.49</text>
+<line x1="88.00" y1="453.60" x2="1202.00" y2="453.60" stroke="#d9dee7" stroke-width="1"/>
+<text x="78.00" y="457.60" font-size="12" fill="#59616f" text-anchor="end" font-weight="400">3.60</text>
+<line x1="88.00" y1="344.40" x2="1202.00" y2="344.40" stroke="#d9dee7" stroke-width="1"/>
+<text x="78.00" y="348.40" font-size="12" fill="#59616f" text-anchor="end" font-weight="400">3.72</text>
+<line x1="88.00" y1="235.20" x2="1202.00" y2="235.20" stroke="#d9dee7" stroke-width="1"/>
+<text x="78.00" y="239.20" font-size="12" fill="#59616f" text-anchor="end" font-weight="400">3.83</text>
+<line x1="88.00" y1="126.00" x2="1202.00" y2="126.00" stroke="#d9dee7" stroke-width="1"/>
+<text x="78.00" y="130.00" font-size="12" fill="#59616f" text-anchor="end" font-weight="400">3.94</text>
+<line x1="88.00" y1="126.00" x2="88.00" y2="672.00" stroke="#d9dee7" stroke-width="1"/>
+<text x="88.00" y="698.00" font-size="12" fill="#59616f" text-anchor="middle" font-weight="400">1</text>
+<line x1="645.00" y1="126.00" x2="645.00" y2="672.00" stroke="#d9dee7" stroke-width="1"/>
+<text x="645.00" y="698.00" font-size="12" fill="#59616f" text-anchor="middle" font-weight="400">2</text>
+<line x1="1202.00" y1="126.00" x2="1202.00" y2="672.00" stroke="#d9dee7" stroke-width="1"/>
+<text x="1202.00" y="698.00" font-size="12" fill="#59616f" text-anchor="middle" font-weight="400">3</text>
+<line x1="88.00" y1="126.00" x2="88.00" y2="672.00" stroke="#20242a" stroke-width="1"/>
+<line x1="88.00" y1="672.00" x2="1202.00" y2="672.00" stroke="#20242a" stroke-width="1"/>
+<text x="645.00" y="732.00" font-size="13" fill="#59616f" text-anchor="middle" font-weight="400">Epoch</text>
+<text x="24.00" y="399.00" font-size="13" fill="#59616f" text-anchor="middle" font-weight="400" transform="rotate(-90 24.00 399.00)">Loss</text>
+<line x1="88.00" y1="91.00" x2="112.00" y2="91.00" stroke="#2f6fbb" stroke-width="3"/>
+<text x="120.00" y="95.00" font-size="12" fill="#20242a" text-anchor="start" font-weight="400">LoRA r1 train</text>
+<line x1="219.60" y1="91.00" x2="243.60" y2="91.00" stroke="#2f6fbb" stroke-width="3" stroke-dasharray="7 5"/>
+<text x="251.60" y="95.00" font-size="12" fill="#20242a" text-anchor="start" font-weight="400">LoRA r1 dev</text>
+<line x1="336.80" y1="91.00" x2="360.80" y2="91.00" stroke="#f28e2b" stroke-width="3"/>
+<text x="368.80" y="95.00" font-size="12" fill="#20242a" text-anchor="start" font-weight="400">LoRA r2 train</text>
+<line x1="468.40" y1="91.00" x2="492.40" y2="91.00" stroke="#f28e2b" stroke-width="3" stroke-dasharray="7 5"/>
+<text x="500.40" y="95.00" font-size="12" fill="#20242a" text-anchor="start" font-weight="400">LoRA r2 dev</text>
+<line x1="585.60" y1="91.00" x2="609.60" y2="91.00" stroke="#59a14f" stroke-width="3"/>
+<text x="617.60" y="95.00" font-size="12" fill="#20242a" text-anchor="start" font-weight="400">LoRA r4 train</text>
+<line x1="717.20" y1="91.00" x2="741.20" y2="91.00" stroke="#59a14f" stroke-width="3" stroke-dasharray="7 5"/>
+<text x="749.20" y="95.00" font-size="12" fill="#20242a" text-anchor="start" font-weight="400">LoRA r4 dev</text>
+<line x1="834.40" y1="91.00" x2="858.40" y2="91.00" stroke="#e15759" stroke-width="3"/>
+<text x="866.40" y="95.00" font-size="12" fill="#20242a" text-anchor="start" font-weight="400">LoRA r8 train</text>
+<line x1="966.00" y1="91.00" x2="990.00" y2="91.00" stroke="#e15759" stroke-width="3" stroke-dasharray="7 5"/>
+<text x="998.00" y="95.00" font-size="12" fill="#20242a" text-anchor="start" font-weight="400">LoRA r8 dev</text>
+<polyline points="88.00,164.65 645.00,324.61 1202.00,358.41" fill="none" stroke="#2f6fbb" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round"/>
+<circle cx="88.00" cy="164.65" r="4.00" fill="#2f6fbb" stroke="white" stroke-width="1.2"/>
+<circle cx="645.00" cy="324.61" r="4.00" fill="#2f6fbb" stroke="white" stroke-width="1.2"/>
+<circle cx="1202.00" cy="358.41" r="4.00" fill="#2f6fbb" stroke="white" stroke-width="1.2"/>
+<polyline points="88.00,412.70 645.00,448.87 1202.00,469.27" fill="none" stroke="#2f6fbb" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round" stroke-dasharray="7 5"/>
+<circle cx="88.00" cy="412.70" r="4.00" fill="#2f6fbb" stroke="white" stroke-width="1.2"/>
+<circle cx="645.00" cy="448.87" r="4.00" fill="#2f6fbb" stroke="white" stroke-width="1.2"/>
+<circle cx="1202.00" cy="469.27" r="4.00" fill="#2f6fbb" stroke="white" stroke-width="1.2"/>
+<polyline points="88.00,243.73 645.00,400.11 1202.00,436.17" fill="none" stroke="#f28e2b" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round"/>
+<circle cx="88.00" cy="243.73" r="4.00" fill="#f28e2b" stroke="white" stroke-width="1.2"/>
+<circle cx="645.00" cy="400.11" r="4.00" fill="#f28e2b" stroke="white" stroke-width="1.2"/>
+<circle cx="1202.00" cy="436.17" r="4.00" fill="#f28e2b" stroke="white" stroke-width="1.2"/>
+<polyline points="88.00,471.70 645.00,512.82 1202.00,536.99" fill="none" stroke="#f28e2b" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round" stroke-dasharray="7 5"/>
+<circle cx="88.00" cy="471.70" r="4.00" fill="#f28e2b" stroke="white" stroke-width="1.2"/>
+<circle cx="645.00" cy="512.82" r="4.00" fill="#f28e2b" stroke="white" stroke-width="1.2"/>
+<circle cx="1202.00" cy="536.99" r="4.00" fill="#f28e2b" stroke="white" stroke-width="1.2"/>
+<polyline points="88.00,303.47 645.00,462.81 1202.00,506.92" fill="none" stroke="#59a14f" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round"/>
+<circle cx="88.00" cy="303.47" r="4.00" fill="#59a14f" stroke="white" stroke-width="1.2"/>
+<circle cx="645.00" cy="462.81" r="4.00" fill="#59a14f" stroke="white" stroke-width="1.2"/>
+<circle cx="1202.00" cy="506.92" r="4.00" fill="#59a14f" stroke="white" stroke-width="1.2"/>
+<polyline points="88.00,518.56 645.00,566.91 1202.00,597.10" fill="none" stroke="#59a14f" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round" stroke-dasharray="7 5"/>
+<circle cx="88.00" cy="518.56" r="4.00" fill="#59a14f" stroke="white" stroke-width="1.2"/>
+<circle cx="645.00" cy="566.91" r="4.00" fill="#59a14f" stroke="white" stroke-width="1.2"/>
+<circle cx="1202.00" cy="597.10" r="4.00" fill="#59a14f" stroke="white" stroke-width="1.2"/>
+<polyline points="88.00,355.41 645.00,521.65 1202.00,575.12" fill="none" stroke="#e15759" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round"/>
+<circle cx="88.00" cy="355.41" r="4.00" fill="#e15759" stroke="white" stroke-width="1.2"/>
+<circle cx="645.00" cy="521.65" r="4.00" fill="#e15759" stroke="white" stroke-width="1.2"/>
+<circle cx="1202.00" cy="575.12" r="4.00" fill="#e15759" stroke="white" stroke-width="1.2"/>
+<polyline points="88.00,560.55 645.00,614.43 1202.00,647.84" fill="none" stroke="#e15759" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round" stroke-dasharray="7 5"/>
+<circle cx="88.00" cy="560.55" r="4.00" fill="#e15759" stroke="white" stroke-width="1.2"/>
+<circle cx="645.00" cy="614.43" r="4.00" fill="#e15759" stroke="white" stroke-width="1.2"/>
+<circle cx="1202.00" cy="647.84" r="4.00" fill="#e15759" stroke="white" stroke-width="1.2"/>
+</svg>

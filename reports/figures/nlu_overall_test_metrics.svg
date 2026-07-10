@@ -1,0 +1,69 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1250" height="760" viewBox="0 0 1250 760" role="img" aria-label="Overall ATIS test comparison">
+<rect width="1250" height="760" fill="#ffffff"/>
+<style>
+text{font-family:Inter,Segoe UI,Arial,sans-serif;}
+.title{font-weight:700;fill:#20242a;}
+.subtitle{fill:#59616f;}
+.axis{stroke:#4b5563;stroke-width:1;}
+.grid{stroke:#d9dee7;stroke-width:1;}
+.tick{fill:#59616f;font-size:12px;}
+.label{fill:#20242a;font-size:13px;}
+.legend{fill:#20242a;font-size:13px;}
+</style>
+<text x="60.00" y="42.00" font-size="24" fill="#20242a" text-anchor="start" font-weight="700" class="title">Overall ATIS test comparison</text>
+<text x="60.00" y="68.00" font-size="14" fill="#20242a" text-anchor="start" font-weight="400" class="subtitle">Slot F1 and full semantic frame accuracy across scratch and pretrained systems.</text>
+<rect x="88.00" y="82.00" width="14.00" height="14.00" rx="2" fill="#f28e2b" stroke="none" opacity="1.0"/>
+<text x="108.00" y="94.00" font-size="13" fill="#20242a" text-anchor="start" font-weight="400" class="legend">Test slot F1</text>
+<rect x="222.80" y="82.00" width="14.00" height="14.00" rx="2" fill="#59a14f" stroke="none" opacity="1.0"/>
+<text x="242.80" y="94.00" font-size="13" fill="#20242a" text-anchor="start" font-weight="400" class="legend">Test frame</text>
+<line x1="88.00" y1="592.00" x2="1208.00" y2="592.00" stroke="#d9dee7" stroke-width="1"/>
+<text x="78.00" y="596.00" font-size="12" fill="#59616f" text-anchor="end" font-weight="400">0.00</text>
+<line x1="88.00" y1="496.00" x2="1208.00" y2="496.00" stroke="#d9dee7" stroke-width="1"/>
+<text x="78.00" y="500.00" font-size="12" fill="#59616f" text-anchor="end" font-weight="400">0.20</text>
+<line x1="88.00" y1="400.00" x2="1208.00" y2="400.00" stroke="#d9dee7" stroke-width="1"/>
+<text x="78.00" y="404.00" font-size="12" fill="#59616f" text-anchor="end" font-weight="400">0.41</text>
+<line x1="88.00" y1="304.00" x2="1208.00" y2="304.00" stroke="#d9dee7" stroke-width="1"/>
+<text x="78.00" y="308.00" font-size="12" fill="#59616f" text-anchor="end" font-weight="400">0.61</text>
+<line x1="88.00" y1="208.00" x2="1208.00" y2="208.00" stroke="#d9dee7" stroke-width="1"/>
+<text x="78.00" y="212.00" font-size="12" fill="#59616f" text-anchor="end" font-weight="400">0.82</text>
+<line x1="88.00" y1="112.00" x2="1208.00" y2="112.00" stroke="#d9dee7" stroke-width="1"/>
+<text x="78.00" y="116.00" font-size="12" fill="#59616f" text-anchor="end" font-weight="400">1.02</text>
+<line x1="88.00" y1="112.00" x2="88.00" y2="592.00" stroke="#20242a" stroke-width="1"/>
+<line x1="88.00" y1="592.00" x2="1208.00" y2="592.00" stroke="#20242a" stroke-width="1"/>
+<text x="20.00" y="352.00" font-size="13" fill="#59616f" text-anchor="middle" font-weight="400" transform="rotate(-90 20.00 352.00)">Score</text>
+<rect x="102.40" y="164.00" width="62.60" height="428.00" rx="2" fill="#f28e2b" stroke="none" opacity="1.0"/>
+<text x="133.70" y="159.00" font-size="11" fill="#20242a" text-anchor="middle" font-weight="400">0.91</text>
+<rect x="168.00" y="238.40" width="62.60" height="353.60" rx="2" fill="#59a14f" stroke="none" opacity="1.0"/>
+<text x="199.30" y="233.40" font-size="11" fill="#20242a" text-anchor="middle" font-weight="400">0.75</text>
+<text x="165.00" y="610.00" font-size="12" fill="#20242a" text-anchor="end" font-weight="400" transform="rotate(-35 165.00 610.00)">Scratch base</text>
+<rect x="262.40" y="159.62" width="62.60" height="432.38" rx="2" fill="#f28e2b" stroke="none" opacity="1.0"/>
+<text x="293.70" y="154.62" font-size="11" fill="#20242a" text-anchor="middle" font-weight="400">0.92</text>
+<rect x="328.00" y="228.91" width="62.60" height="363.09" rx="2" fill="#59a14f" stroke="none" opacity="1.0"/>
+<text x="359.30" y="223.91" font-size="11" fill="#20242a" text-anchor="middle" font-weight="400">0.77</text>
+<text x="325.00" y="610.00" font-size="12" fill="#20242a" text-anchor="end" font-weight="400" transform="rotate(-35 325.00 610.00)">Scratch h8</text>
+<rect x="422.40" y="155.59" width="62.60" height="436.41" rx="2" fill="#f28e2b" stroke="none" opacity="1.0"/>
+<text x="453.70" y="150.59" font-size="11" fill="#20242a" text-anchor="middle" font-weight="400">0.93</text>
+<rect x="488.00" y="227.86" width="62.60" height="364.14" rx="2" fill="#59a14f" stroke="none" opacity="1.0"/>
+<text x="519.30" y="222.86" font-size="11" fill="#20242a" text-anchor="middle" font-weight="400">0.77</text>
+<text x="485.00" y="610.00" font-size="12" fill="#20242a" text-anchor="end" font-weight="400" transform="rotate(-35 485.00 610.00)">Scratch d192</text>
+<rect x="582.40" y="144.25" width="62.60" height="447.75" rx="2" fill="#f28e2b" stroke="none" opacity="1.0"/>
+<text x="613.70" y="139.25" font-size="11" fill="#20242a" text-anchor="middle" font-weight="400">0.95</text>
+<rect x="648.00" y="183.59" width="62.60" height="408.41" rx="2" fill="#59a14f" stroke="none" opacity="1.0"/>
+<text x="679.30" y="178.59" font-size="11" fill="#20242a" text-anchor="middle" font-weight="400">0.87</text>
+<text x="645.00" y="610.00" font-size="12" fill="#20242a" text-anchor="end" font-weight="400" transform="rotate(-35 645.00 610.00)">BERT</text>
+<rect x="742.40" y="176.15" width="62.60" height="415.85" rx="2" fill="#f28e2b" stroke="none" opacity="1.0"/>
+<text x="773.70" y="171.15" font-size="11" fill="#20242a" text-anchor="middle" font-weight="400">0.88</text>
+<rect x="808.00" y="275.82" width="62.60" height="316.18" rx="2" fill="#59a14f" stroke="none" opacity="1.0"/>
+<text x="839.30" y="270.82" font-size="11" fill="#20242a" text-anchor="middle" font-weight="400">0.67</text>
+<text x="805.00" y="610.00" font-size="12" fill="#20242a" text-anchor="end" font-weight="400" transform="rotate(-35 805.00 610.00)">GPT2</text>
+<rect x="902.40" y="161.28" width="62.60" height="430.72" rx="2" fill="#f28e2b" stroke="none" opacity="1.0"/>
+<text x="933.70" y="156.28" font-size="11" fill="#20242a" text-anchor="middle" font-weight="400">0.92</text>
+<rect x="968.00" y="226.28" width="62.60" height="365.72" rx="2" fill="#59a14f" stroke="none" opacity="1.0"/>
+<text x="999.30" y="221.28" font-size="11" fill="#20242a" text-anchor="middle" font-weight="400">0.78</text>
+<text x="965.00" y="610.00" font-size="12" fill="#20242a" text-anchor="end" font-weight="400" transform="rotate(-35 965.00 610.00)">GPT2 mean</text>
+<rect x="1062.40" y="142.34" width="62.60" height="449.66" rx="2" fill="#f28e2b" stroke="none" opacity="1.0"/>
+<text x="1093.70" y="137.34" font-size="11" fill="#20242a" text-anchor="middle" font-weight="400">0.96</text>
+<rect x="1128.00" y="178.85" width="62.60" height="413.15" rx="2" fill="#59a14f" stroke="none" opacity="1.0"/>
+<text x="1159.30" y="173.85" font-size="11" fill="#20242a" text-anchor="middle" font-weight="400">0.88</text>
+<text x="1125.00" y="610.00" font-size="12" fill="#20242a" text-anchor="end" font-weight="400" transform="rotate(-35 1125.00 610.00)">BERT extra</text>
+</svg>

@@ -1,0 +1,12 @@
+LM/partA experiment: smoke_shapes_loss_ppl_checkpoint_csv
+Mode/device/seed: smoke / cpu / 1
+Architecture: d_model=64 n_heads=2 num_layers=1 ff_dim=256 dropout=0.1
+Weight tying: True
+Parameters before/after tying: 6485056 / 3268608
+Best epoch: 1
+Final train loss: 10.8219
+Best dev loss/PPL: 10.7731 / 47720.51
+Test PPL from best checkpoint: 48875.97
+Train-dev gap: -0.0488
+Decision: accept
+Notes: best dev PPL so far

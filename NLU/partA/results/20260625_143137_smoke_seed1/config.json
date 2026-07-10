@@ -1,0 +1,9 @@
+{
+  "device": "cpu",
+  "experiments": [
+    "smoke_shapes_losses_metrics_checkpoint_csv"
+  ],
+  "mode": "smoke",
+  "part": "NLU/partA",
+  "seed": 1
+}

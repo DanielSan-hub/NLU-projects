@@ -1,0 +1,10 @@
+NLU/partA scratch GPT-style ATIS intent + slot model
+Run directory: 20260625_134114_smoke_seed1
+Mode/seed/device: smoke / 1 / cpu
+Best dev combined score: 0.2622
+Test intent accuracy: 0.3750
+Test slot token F1: 0.0000
+Train time seconds: 0.06
+Tokens per second: 1192.54
+Peak CUDA memory MB: 0.00
+Parameters total/trainable: 117083 / 117083

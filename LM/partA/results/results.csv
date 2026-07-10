@@ -1,0 +1,2 @@
+run_dir,part,mode,seed,device,amp_requested,amp_enabled_final,train_loss,valid_loss,valid_ppl,test_loss,test_ppl,train_time_seconds,tokens_per_second,peak_memory_mb,total_params,trainable_params
+20260625_134102_smoke_seed1,LM/partA,smoke,1,cpu,False,False,9.238837,9.219317,10090.174805,9.209291,9989.516602,0.1,2571.223,0.0,692224,692224

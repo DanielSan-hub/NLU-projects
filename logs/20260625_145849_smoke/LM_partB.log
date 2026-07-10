@@ -1,0 +1,96 @@
+C:\Users\Utente\AppData\Local\Programs\Python\Python312\Lib\site-packages\huggingface_hub\file_download.py:949: FutureWarning: `resume_download` is deprecated and will be removed in version 1.0.0. Downloads always resume when possible. If you want to force a new download, use `force_download=True`.
+  warnings.warn(
+PartA best scratch dev PPL=47720.5128 test PPL=48875.9653 (smoke_shapes_loss_ppl_checkpoint_csv)
+c_attn modules before LoRA:
+  transformer.h.0.attn.c_attn type=Conv1D weight_shape=(768, 2304) bias_shape=(2304,)
+  transformer.h.1.attn.c_attn type=Conv1D weight_shape=(768, 2304) bias_shape=(2304,)
+  transformer.h.2.attn.c_attn type=Conv1D weight_shape=(768, 2304) bias_shape=(2304,)
+  transformer.h.3.attn.c_attn type=Conv1D weight_shape=(768, 2304) bias_shape=(2304,)
+  transformer.h.4.attn.c_attn type=Conv1D weight_shape=(768, 2304) bias_shape=(2304,)
+  transformer.h.5.attn.c_attn type=Conv1D weight_shape=(768, 2304) bias_shape=(2304,)
+  transformer.h.6.attn.c_attn type=Conv1D weight_shape=(768, 2304) bias_shape=(2304,)
+  transformer.h.7.attn.c_attn type=Conv1D weight_shape=(768, 2304) bias_shape=(2304,)
+  transformer.h.8.attn.c_attn type=Conv1D weight_shape=(768, 2304) bias_shape=(2304,)
+  transformer.h.9.attn.c_attn type=Conv1D weight_shape=(768, 2304) bias_shape=(2304,)
+  transformer.h.10.attn.c_attn type=Conv1D weight_shape=(768, 2304) bias_shape=(2304,)
+  transformer.h.11.attn.c_attn type=Conv1D weight_shape=(768, 2304) bias_shape=(2304,)
+Trainable parameter names:
+  transformer.h.0.attn.c_attn.lora_A.q
+  transformer.h.0.attn.c_attn.lora_A.k
+  transformer.h.0.attn.c_attn.lora_A.v
+  transformer.h.0.attn.c_attn.lora_B.q
+  transformer.h.0.attn.c_attn.lora_B.k
+  transformer.h.0.attn.c_attn.lora_B.v
+  transformer.h.1.attn.c_attn.lora_A.q
+  transformer.h.1.attn.c_attn.lora_A.k
+  transformer.h.1.attn.c_attn.lora_A.v
+  transformer.h.1.attn.c_attn.lora_B.q
+  transformer.h.1.attn.c_attn.lora_B.k
+  transformer.h.1.attn.c_attn.lora_B.v
+  transformer.h.2.attn.c_attn.lora_A.q
+  transformer.h.2.attn.c_attn.lora_A.k
+  transformer.h.2.attn.c_attn.lora_A.v
+  transformer.h.2.attn.c_attn.lora_B.q
+  transformer.h.2.attn.c_attn.lora_B.k
+  transformer.h.2.attn.c_attn.lora_B.v
+  transformer.h.3.attn.c_attn.lora_A.q
+  transformer.h.3.attn.c_attn.lora_A.k
+  transformer.h.3.attn.c_attn.lora_A.v
+  transformer.h.3.attn.c_attn.lora_B.q
+  transformer.h.3.attn.c_attn.lora_B.k
+  transformer.h.3.attn.c_attn.lora_B.v
+  transformer.h.4.attn.c_attn.lora_A.q
+  transformer.h.4.attn.c_attn.lora_A.k
+  transformer.h.4.attn.c_attn.lora_A.v
+  transformer.h.4.attn.c_attn.lora_B.q
+  transformer.h.4.attn.c_attn.lora_B.k
+  transformer.h.4.attn.c_attn.lora_B.v
+  transformer.h.5.attn.c_attn.lora_A.q
+  transformer.h.5.attn.c_attn.lora_A.k
+  transformer.h.5.attn.c_attn.lora_A.v
+  transformer.h.5.attn.c_attn.lora_B.q
+  transformer.h.5.attn.c_attn.lora_B.k
+  transformer.h.5.attn.c_attn.lora_B.v
+  transformer.h.6.attn.c_attn.lora_A.q
+  transformer.h.6.attn.c_attn.lora_A.k
+  transformer.h.6.attn.c_attn.lora_A.v
+  transformer.h.6.attn.c_attn.lora_B.q
+  transformer.h.6.attn.c_attn.lora_B.k
+  transformer.h.6.attn.c_attn.lora_B.v
+  transformer.h.7.attn.c_attn.lora_A.q
+  transformer.h.7.attn.c_attn.lora_A.k
+  transformer.h.7.attn.c_attn.lora_A.v
+  transformer.h.7.attn.c_attn.lora_B.q
+  transformer.h.7.attn.c_attn.lora_B.k
+  transformer.h.7.attn.c_attn.lora_B.v
+  transformer.h.8.attn.c_attn.lora_A.q
+  transformer.h.8.attn.c_attn.lora_A.k
+  transformer.h.8.attn.c_attn.lora_A.v
+  transformer.h.8.attn.c_attn.lora_B.q
+  transformer.h.8.attn.c_attn.lora_B.k
+  transformer.h.8.attn.c_attn.lora_B.v
+  transformer.h.9.attn.c_attn.lora_A.q
+  transformer.h.9.attn.c_attn.lora_A.k
+  transformer.h.9.attn.c_attn.lora_A.v
+  transformer.h.9.attn.c_attn.lora_B.q
+  transformer.h.9.attn.c_attn.lora_B.k
+  transformer.h.9.attn.c_attn.lora_B.v
+  transformer.h.10.attn.c_attn.lora_A.q
+  transformer.h.10.attn.c_attn.lora_A.k
+  transformer.h.10.attn.c_attn.lora_A.v
+  transformer.h.10.attn.c_attn.lora_B.q
+  transformer.h.10.attn.c_attn.lora_B.k
+  transformer.h.10.attn.c_attn.lora_B.v
+  transformer.h.11.attn.c_attn.lora_A.q
+  transformer.h.11.attn.c_attn.lora_A.k
+  transformer.h.11.attn.c_attn.lora_A.v
+  transformer.h.11.attn.c_attn.lora_B.q
+  transformer.h.11.attn.c_attn.lora_B.k
+  transformer.h.11.attn.c_attn.lora_B.v
+Step-0 base vs LoRA max_abs_diff=0.00000000
+Forward check: logits_shape=(2, 64, 50257) loss=5.2499 padding_ignored_loss=5.2644
+Total params: 124550400
+Trainable params: 110592
+Trainable percent: 0.088793%
+smoke_lora_qkv_r2_alpha4 epoch=1 train_loss=5.9031 dev_loss=5.3345 dev_ppl=207.37
+Final best configuration: smoke_lora_qkv_r2_alpha4 dev_ppl=207.371476 test_ppl=365.313062 improves_over_partA=True checkpoint=results/20260625_145908_smoke_seed1/smoke_lora_qkv_r2_alpha4/best_lora_adapters.pt
