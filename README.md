@@ -1,89 +1,88 @@
-# NLU-2026 Laboratories
+# Transformer and NLU Systems
 
-This repo contains all the laboratory lectures for the Natural Language Understanding course held at the University of Trento.
-<br>
+Four reproducible mini-projects exploring transformer language modelling and multitask natural-language understanding: from a decoder-only model built from scratch to parameter-efficient GPT-2 adaptation with manually implemented LoRA.
 
-## Getting started
+This repository contains my implementation for the University of Trento Natural Language Understanding course. I keep the original lab context for attribution, but the portfolio focus is model internals, evaluation discipline, and reproducible experiment tooling.
 
-We suggest you install [Anaconda](https://www.anaconda.com/download) on your laptop and import the conda environment that we have prepared for you. The reason for this is to give you the same library versions that we used to test the labs. However, if you are not a conda lover, you can manually install on your favourite virtual env the libraries listed in the `requirements.txt` file.
+## What I implemented
+
+- A GPT-2-style causal language model from scratch, including masked self-attention, transformer blocks, training, checkpointing, and perplexity evaluation.
+- Manual LoRA injection into GPT-2's fused QKV projection, with frozen-base fine-tuning and trainable-parameter accounting.
+- A scratch decoder model for joint ATIS intent classification and slot filling.
+- BERT- and GPT-2-based multitask NLU systems with tokenizer/subword alignment and `-100` masking for non-label positions.
+- A shared experiment workflow with smoke, core, and optional runs; deterministic seeds; CSV collection; report figures; and validation scripts.
+
+## Project map
+
+| Project | Model | Task / data | Main evaluation |
+| --- | --- | --- | --- |
+| [`LM/partA`](LM/partA) | Scratch GPT-2 | Penn Treebank language modelling | Perplexity |
+| [`LM/partB`](LM/partB) | Pretrained GPT-2 + manual LoRA | Penn Treebank language modelling | Perplexity, trainable parameters |
+| [`NLU/partA`](NLU/partA) | Scratch GPT-2 multitask model | ATIS intent + slot filling | Intent accuracy, slot F1, frame accuracy |
+| [`NLU/partB`](NLU/partB) | Pretrained BERT and GPT-2 | ATIS intent + slot filling | Intent accuracy, slot F1, frame accuracy |
+
+Each linked directory contains implementation notes, design choices, commands, and expected artifacts.
+
+## Verified results
+
+The public repository includes report artifacts and lightweight run metadata. Checkpoints are intentionally excluded because several are too large for a portfolio repo; the metrics below are copied from the local report artifacts in [`reports/REPORT_NOTES.md`](reports/REPORT_NOTES.md), with smoke-run CSV metadata preserved under [`results/`](results).
+
+| Area | Best verified result | Source |
+| --- | --- | --- |
+| Scratch LM | `ablation_d_model_192`: dev PPL `62.624`, test PPL `53.651` | [`reports/LM_partA_report.md`](reports/LM_partA_report.md) |
+| GPT-2 LoRA LM | mandatory `rank8_alpha16_qkv`: dev PPL `30.114`, test PPL `27.059`; optional `extra_rank16_alpha32_qkv`: test PPL `25.811` | [`reports/LM_partB_report.md`](reports/LM_partB_report.md) |
+| Scratch multitask NLU | `ablation_n_heads_8`: test intent `0.960`, test slot F1 `0.919`, frame accuracy `0.772` | [`reports/NLU_partA_report.md`](reports/NLU_partA_report.md) |
+| Pretrained multitask NLU | BERT core: test intent `0.976`, test slot F1 `0.951`, frame accuracy `0.868`; ontology run: frame accuracy `0.878` | [`reports/NLU_partB_report.md`](reports/NLU_partB_report.md) |
+
+The checked-in [`results/master_results.csv`](results/master_results.csv) is a smoke-run aggregation snapshot generated on 2026-06-25. It is useful for validating the collection pipeline, while the report notes summarize the final university-machine runs.
+
+## Five-minute review
+
+1. Start with [`PROJECT_CARD.md`](PROJECT_CARD.md) for the design and evaluation overview.
+2. Inspect [`LM/partB/model.py`](LM/partB/model.py) for the manual LoRA implementation.
+3. Inspect [`NLU/partB/utils.py`](NLU/partB/utils.py) for subtoken/label alignment.
+4. Inspect [`NLU/partA/model.py`](NLU/partA/model.py) for the scratch multitask architecture.
+5. Run the dependency-free public snapshot check below.
+
+## Reproduce and validate
+
+Create an environment for the project code:
 
 ```bash
-conda env create -f nlu_env.yaml -n nlu26
-conda activate nlu26
+python -m venv .venv
+source .venv/bin/activate
+pip install -r requirements_project.txt
 ```
-If you have a Mac or a Windows or you do not have a dedicated Nvidia gpu, you can install the environment in this way:
+
+Run the lightweight repository check, which requires no model downloads or GPU:
 
 ```bash
-conda create -n nlu26 python=3.10.13
-conda activate nlu26
-pip install -r requirements_no_cuda.txt
+python scripts/validate_public_snapshot.py
 ```
 
-To launch a lab run this line of code:
+Run all short end-to-end checks:
+
 ```bash
-jupyter notebook
+DEVICE=cpu ALLOW_CPU=1 bash scripts/smoke_all.sh
 ```
 
+On a CUDA machine, execute the mandatory experiments and collect their outputs:
 
-Then, you have to choose the lab that you want to open.
+```bash
+bash scripts/run_core.sh
+python scripts/collect_results.py
+python scripts/validate_submission.py
+```
 
-<br>
+See [`README_MASTER.md`](README_MASTER.md) for resume, `tmux`, TensorBoard, and optional-run instructions.
 
-## Repo organization
-In the repo `labs`, you can find the notebooks for each lab session and in `solutions` you can find the same notebooks with the solutions.
-<br>
+## Artifact policy
 
-The solutions of each lab will be uploaded after the corresponding lab lecture.
+- Tracked: source code, datasets used by the course project, lab context, report notes, figures, CSV summaries, configuration JSON files, and small logs needed to verify the reported workflow.
+- Not tracked: trained checkpoints (`*.pt`, `*.pth`, `*.ckpt`, `*.bin`, `*.safetensors`), virtual environments, caches, and local TensorBoard runs.
 
+## Authorship and course context
 
-## Exam
+My project implementation lives in `LM/`, `NLU/`, `scripts/`, `reports/`, and the generated result metadata. The `labs/`, `solutions/`, `exam/`, environment files, and parts of the assignment structure originate from the University of Trento NLU course repository and remain here for context. They should not be read as original work. Upstream acknowledgements and licensing are preserved in [`LICENSE`](LICENSE).
 
-### Instructions
-
-There will be one project assignment that will be graded (80% of the final exam grade) and Q&A during the oral exam on any of the topics covered in the class (lectures and labs) (20% of the final exam grade).
-The mandatory project consists of two parts that are presented in lab 4 (LM) and 5 (NLU).
-
-You will write a total of 2 reports: one for LM (1.A + 1.B) and one for NLU (2.A + 2.B). Each report must follow the LaTeX template in the zip folder `report_template.zip`. In particular, you have to write a mini-report of **max 1 page** (references, tables and images are excluded from the count) in which you explain all the parts of the project giving more weight to the part with higher points. **Reports longer than 1 page will not be evaluated**. The purpose of this is to give you a way to report **cleanly** the results and give you space to describe what you have done and/or the originality that you have added to the exercise. You can find more detail about the sections and relative content in the LaTeX template.
-
-### Grading
-The final grade is based on:
-- Project (80%): Code and Report review;
-- Q&A at the exam (20%):
-    -  The questions will be related to the delivered project, and any of the topics covered in the class and during the labs.
-
-### Use of AI tools
-Use of AI tools is allowed but must be declared in the report.
-You are responsible for all the code you deliver, and we may ask questions about your code.
-
-### Submission format
-
-The delivery must follow the directory schema that you can find in `exam/studentID_name_surname.zip`.
-
-The `LM` and `NLU` folders contain two sub-folders one for part A and the other for part B.   Inside them, there are the following files and folders: `main.py`, `functions.py` ,  `utils.py`,  `model.py`,  `README.md`, `/dataset` and `/bin`.
-
-- `utils.py`: you have to put all the functions needed to preprocess and load the dataset
-- `model.py`: the class of the model defined in PyTorch.
-- `functions.py`: you have to write all the other required functions (taken from the notebook and/or written on your own) needed to complete the exercise.
-- `main.py`: you have to write the calls to the functions needed to output the results asked by the exercise.
-- `README.md`: you may want to write a message for us related to your solution (optional).
-- `/dataset`: the files of that dataset that you used.
-- `/bin`: the binary files of the best models that you have trained.
-
- The **reports** have to be placed in the corresponding folders i.e. into the folders `LM` and `NLU`.
-
-**Last but not least**, the code has to be **well-written** and **documented** with comments. Furthermore, the script has to **run** without bugs otherwise the exercise will not be evaluated. Jupyter notebooks are not accepted.
-
-<br>
-
-### How to submit
-To deliver your project you have to:
-
-1. register for the exam on esse3.
-2. fill out this [Google form](https://forms.gle/6wvPsq49Xy85JLsA7).
-
-The project must be delivered **7 days before** the date of the exam session that you want to attend. You can do multiple submissions as we will check only the last one.
-
-<br>
-
-## Acknowledgements
-The notebooks that you can find here are an adaptation of the labs created by our colleagues [Evgeny A. Stepanov](https://github.com/esrel), and [Gabriel Roccabruna](https://github.com/BrownFortress). Also, we want to thank all the students who gave us feedback for improving these notebooks.
+AI tools were used as a coding and review aid. I remain responsible for the design choices, source code, tests, and explanations in this repository.

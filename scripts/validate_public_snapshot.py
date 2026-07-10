@@ -11,6 +11,14 @@ ROOT = Path(__file__).resolve().parents[1]
 PARTS = ("LM/partA", "LM/partB", "NLU/partA", "NLU/partB")
 REQUIRED_MODULES = ("main.py", "model.py", "functions.py", "utils.py", "README.md")
 REQUIRED_FLAGS = ("--mode", "--device", "--seed")
+REQUIRED_ARTIFACTS = (
+    "PROJECT_CARD.md",
+    "results/master_results.csv",
+    "results/summary.md",
+    "reports/REPORT_NOTES.md",
+    "reports/figures/project_best_summary.svg",
+)
+FORBIDDEN_EXTENSIONS = {".pt", ".pth", ".ckpt", ".bin", ".safetensors"}
 
 
 def check(condition: bool, message: str, errors: list[str]) -> None:
@@ -53,6 +61,16 @@ def main() -> int:
     notebooks = list((ROOT / "LM").rglob("*.ipynb")) + list((ROOT / "NLU").rglob("*.ipynb"))
     check(not notebooks, "project submission directories contain no notebooks", errors)
 
+    for relative_path in REQUIRED_ARTIFACTS:
+        check((ROOT / relative_path).is_file(), f"{relative_path} exists", errors)
+
+    forbidden_files = [
+        path.relative_to(ROOT)
+        for path in ROOT.rglob("*")
+        if path.is_file() and path.suffix.lower() in FORBIDDEN_EXTENSIONS
+    ]
+    check(not forbidden_files, "no heavyweight checkpoint/model artifacts are tracked", errors)
+
     if errors:
         print(f"\nPublic snapshot validation failed with {len(errors)} error(s).")
         return 1
@@ -62,4 +80,3 @@ def main() -> int:
 
 if __name__ == "__main__":
     raise SystemExit(main())
-

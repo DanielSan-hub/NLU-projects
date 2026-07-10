@@ -20,7 +20,14 @@ This progression makes otherwise hidden implementation details inspectable: caus
 - Language modelling: token-level cross-entropy and perplexity.
 - Multitask NLU: intent accuracy and slot F1, keeping padding and non-first subtokens out of the slot loss with label `-100`.
 - Reproducibility: explicit seeds, saved run configurations, resumable checkpoints, structured CSV outputs, smoke/core/optional run tiers, and a submission validator.
-- Reporting: no metric is presented without its associated run artifacts; the public snapshot currently makes no quantitative performance claim.
+- Reporting: quantitative claims are tied to checked-in report notes, figures, CSV summaries, and run metadata. Large checkpoint files are excluded from Git.
+
+## Result summary
+
+- Scratch LM best verified run: `ablation_d_model_192`, dev PPL `62.624`, test PPL `53.651`.
+- GPT-2 LoRA best mandatory run: `rank8_alpha16_qkv`, dev PPL `30.114`, test PPL `27.059`; optional `extra_rank16_alpha32_qkv` reached test PPL `25.811`.
+- Scratch multitask NLU best dev-selected run: test intent accuracy `0.960`, test slot F1 `0.919`, frame accuracy `0.772`.
+- Pretrained multitask NLU: BERT core reached test intent accuracy `0.976`, test slot F1 `0.951`, frame accuracy `0.868`; the ontology run reached frame accuracy `0.878`.
 
 ## Engineering highlights
 
@@ -31,7 +38,6 @@ This progression makes otherwise hidden implementation details inspectable: caus
 
 ## Limitations and next experiments
 
-- Final GPU runs and confidence estimates still need to be published with hardware, seed, and configuration metadata.
-- The current scope is course-sized; stronger work would add multiple seeds, ablations over LoRA rank/target modules, error slices for rare intents and slots, and calibration tests.
+- Confidence intervals are not reported; the final runs use a fixed seed and should be repeated across seeds for stronger claims.
+- The current scope is course-sized; stronger work would add broader error slices for rare intents and slots, calibration tests, and robustness checks under paraphrase or distribution shift.
 - A natural safety-oriented extension is to test whether parameter-efficient adaptation changes robustness under distribution shift or adversarial paraphrase.
-
