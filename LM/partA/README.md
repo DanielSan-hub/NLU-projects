@@ -117,4 +117,4 @@ For the report, use the best `dev_ppl` row in `results/results_partA.csv`. A typ
 
 ## AI Tool Usage Declaration
 
-This project harness and implementation were completed with AI assistance. The code was reviewed and smoke-tested by running the command-line entry points, and the final responsibility for interpreting results and reporting conclusions remains with the student.
+This project harness and implementation were completed with AI assistance. The code was reviewed and smoke-tested by running the command-line entry points, and the final responsibility for interpreting results and reporting conclusions remain mine.
